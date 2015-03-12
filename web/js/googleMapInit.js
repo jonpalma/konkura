@@ -12,17 +12,17 @@ function initialize() {
     var map_canvas = document.getElementById('googleMap');
 
     var map_options = {
-        center: new google.maps.LatLng(28.644897,-106.066754),
-        zoom: 15,
+        center: new google.maps.LatLng(28.624755,-106.073861),
+        zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
     };
 
     var map = new google.maps.Map(map_canvas, map_options);
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(28.644897,-106.066754),
+        position: new google.maps.LatLng(28.624755,-106.073861),
         map: map,
-        title: 'VTS'
+        title: 'KONKURA'
     });
    /* var styles = [
         {
@@ -100,7 +100,7 @@ function initialize() {
         {
         } 
     ]*/
-    map.setOptions({styles: styles});
+    map.setOptions();
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
