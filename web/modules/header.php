@@ -19,7 +19,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="0">
   <header>
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-konkura-navbar-collapse-1">
@@ -32,15 +32,15 @@
                         <img src="img/logo.png" alt="KONKURA logotipo" class="img-responsive logo-lg">
                     </a>
                 </div>
-                <div class="collapse navbar-collapse navbar-right" id="bs-konkura-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-left" id="bs-konkura-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li><a href="#inicio" class="smoothScroll">Inicio</a></li>
-                      <li><a href="#nosotros" class="smoothScroll">Nosotros</a></li>
-                      <li><a href="#forma_trabajo" class="smoothScroll">Forma de trabajo</a></li>
-                      <li><a href="#capacitacion" class="smoothScroll">Capacitación</a></li>
-                      <li><a href="#consultoria" class="smoothScroll">Consultoría</a></li>
-                      <li><a href="#noticias" class="smoothScroll">Noticias</a></li>
-                      <li><a href="#contacto" class="smoothScroll">Contacto</a></li>
+                      <li><a href="#" class="smoothScroll">Inicio</a></li>
+                      <li><a href="#">Nosotros</a></li>
+                      <li><a href="#">Forma de trabajo</a></li>
+                      <li><a href="#">Capacitación</a></li>
+                      <li><a href="#">Consultoría</a></li>
+                      <li><a href="#">Noticias</a></li>
+                      <li><a href="#">Contacto</a></li>
                   </ul>
           </div>
             </div>

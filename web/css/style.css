@@ -1,4 +1,165 @@
+/*
+Theme Name: KONKURA
+Theme URI: http://konkura.com
+Author: Agencia Mixen
+Author URI: http://mixen.mx/
+Description: Tema para el sitio de KONKURA.
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
+
+/** FONTS **/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,700,700italic);
+
+/** MENU **/
+.navbar {
+    height: 113px;
+    background-color: #fff;
+    z-index: 9999;
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav {
+    margin-top: 30px;
+}
+
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    color: #000 !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0 5px;
+    padding: 15px 15px 5px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .open > a {
+    background-image: none !important;
+}
+
+.navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
+.dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+    background-image: none;
+    background-color: inherit !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #ffad00;
+
+}
+
+.navbar.navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+    background-image: none;
+}
+
+.navbar .navbar-collapse {
+    background-color: #fff;
+}
+
+/** SECTIONS **/
+.bg-white {
+    background-color: #fff;
+    padding-top: 0;
+}
+
+.bg-white .heading{
+    position: relative;
+}
+
+.bg-white .heading span {
+    width: 100%;
+    font-size: 20px;
+    line-height: 31.76px;
+    text-align: center;
+    color: #4a4a4a;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.bg-white .distinction .row {
+    margin-bottom: 20px;
+}
+.bg-white .distinction h5 {
+    font-size: 15px;
+    line-height: 25px;
+    color: #353535;
+    text-align: center;
+}
+
+
+
+.bg-yellow {
+    background-color: #ffad00;
+}
+
+.bg-img-cursos {
+    background: url('../img/cursos_bg.jpg') repeat-x;
+    height: 597px;
+}
+
+/** CAROUSEL **/
+
+.carousel-caption {
+    z-index: 10;
+}
+
+
+.carousel .item {
+    min-width: 100%;
+    background-color: #fff;
+}
+
+.carousel-inner > .item > img {
+    min-width: 100%;
+    height: 100%;;
+}
+
+.carousel-caption {
+    bottom: 30%;
+}
+
+.carousel-caption h1 {
+    width: 474px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.carousel-caption p {
+    width: 594px;
+    font-weight: 400;
+    line-height: 39.66px;
+    font-size: 24px;
+    margin: 10px auto 0;
+    
+}
+
+.carousel-indicators li {
+    background-color: rgba(245, 136, 30, 0.4);
+}
+
+.carousel-indicators li.active {
+    background-color: #fff;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+     border: 1px solid rgba(245, 136, 30, 0.4);
+}
+
+
 /** MISC **/
+svg {
+    width: 100%;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+
 #googleMap {
     width: 100%;
     height: 561px;

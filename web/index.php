@@ -40,13 +40,16 @@
                     </div>
            <!-- END SLIDE -->
            <!-- BEGIN DISTINCION -->
-           <div class="jumbotron">
-               <svg></svg>
-               <div class="container">
+           <div class="jumbotron bg-white">
+              <div class="heading">
+                  <svg></svg>
+                  <span>Nos distinguimos por:</span>
+              </div>
+              <div class="container distinction">
                    <div class="row">
                        <div class="col-sm-3">
                            <img src="img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
-                           <h5>Escuchamos a nuestro clientes</h5>
+                           <h5>Escuchamos a nuestros clientes</h5>
                        </div>
                        <div class="col-sm-3">
                            <img src="img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
@@ -83,7 +86,7 @@
            </div>
            <!-- END DISTICION -->
            <!-- BEGIN NOSOTROS -->
-           <div class="jumbotron">
+           <div class="jumbotron bg-yellow">
               <svg></svg>
                <div class="container">
                    <div class="row">
@@ -118,7 +121,7 @@
            </div>
            <!-- END FILOSOFIA -->
            <!-- BEGIN CURSOS -->
-           <div class="jumbotron">
+           <div class="jumbotron bg-img-cursos">
                <div class="container-fluid">
                    <div class="row">
                        <div class="col-sm-12">
