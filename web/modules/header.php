@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="0">
+  <div id="top"></div>
   <header>
         <nav class="navbar" role="navigation">
             <div class="container">

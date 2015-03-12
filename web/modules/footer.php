@@ -2,7 +2,7 @@
    <div class="container footer-black">
        <div class="row">
           <div class="col-sm-3">
-              <h3>Konkura</h3>
+              <h3 class="text-uppercase">Konkura</h3>
               <p>
                   Nuestro despacho cuenta con la capacidad y experiencia para responder a las necesidades y resolver las demandas de las organizaciones
                   empresariales y educativas.
@@ -26,10 +26,10 @@
                   <li><a href="">Juegos didácticos</a></li>
               </ul>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 contacto">
               <h3>Contacto</h3>
                <address>
-                  <h3>Konkura</h3>
+                  <h4>Konkura</h4>
                    Calle 22 #181 <br>
                    Col. Sta. Rita, C.P.31020<br />
                    Chihuahua, Chih.<br />
@@ -41,7 +41,7 @@
        </div>
    </div>
    <div class="footer-rights">
-       <h4>Todos los derechos reservados KONKURA 2015 | Design by: <a href="http://mixen.mx"><img src="http://mixen.mx/firma/logo-mixen.png" alt="Agencia Mixen"> mixen.mx</a></h4>
+       <h6>Todos los derechos reservados KONKURA 2015 | Design by: <a href="http://mixen.mx"><img src="http://mixen.mx/firma/logo-mixen.png" alt="Agencia Mixen"> mixen.mx</a></h6>
    </div>
    <br />
     <script src="js/jquery.min.js"></script>

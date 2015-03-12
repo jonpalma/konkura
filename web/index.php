@@ -88,13 +88,18 @@
            <!-- BEGIN NOSOTROS -->
            <div class="jumbotron bg-yellow">
               <svg></svg>
-               <div class="container">
+               <div class="container nosotros">
                    <div class="row">
                        <div class="col-sm-6">
                            <h2>¿Por qué nosotros?</h2>
                            <p>
-                               Somos un equipo multidiscilinario de profesionales que contrbiyue a mejorar la competitividad de las organizaciones
+                               Somos un equipo multidiscilinario de profesionales que contribuye a mejorar la competitividad de las organizaciones
                                o instituciones educativas, a través de la intervención en gestión de proyectos, capacitación y desarrollo organizacional.
+                           </p>
+                           <p>
+                               Nuestro despacho cuenta con la capacidad y experiencia para
+                               responder a las necesidades y resolver las demandas de las
+                               organizaciones empresariales y educativas.
                            </p>
                        </div>
                        <div class="col-sm-6">
@@ -110,41 +115,41 @@
            </div>
            <!-- END NOSOTROS -->
            <!-- BEGIN FILOSOFIA -->
-           <div class="jumbotron">
+           <div class="jumbotron bg-white">
                <div class="container">
                    <div class="row">
                        <div class="col-sm-12">
-                           <h2>Filosofía</h2>
+                           <h3>Filosofía</h3>
                        </div>
                    </div>
                </div>
            </div>
            <!-- END FILOSOFIA -->
            <!-- BEGIN CURSOS -->
-           <div class="jumbotron bg-img-cursos">
+           <div class="jumbotron bg-white">
                <div class="container-fluid">
                    <div class="row">
                        <div class="col-sm-12">
                           <div class="center-block">
-                              <h2>Cursos</h2>
+                              <h3>Cursos</h3>
                               <svg></svg>
                           </div>
                        </div>
                    </div>
-                   <div class="row">
+                   <div class="row  bg-img-cursos">
                        <div class="col-sm-12">
                            <h3>Descarga nuestros cursos en línea.</h3>
-                           <a href="" class="bttn">Ver cursos disponibles</a>
+                           <a href="" class="btn btn-white">Ver cursos disponibles</a>
                        </div>
                    </div>
                </div>
            </div>
            <!-- END CURSOS -->
            <!-- BEGIN KONKURA -->
-           <div class="jumbotron">
+           <div class="jumbotron bg-white">
                <div class="container">
-                   <div class="row">
-                       <div class="col-sm-12"><img src="img/konkura.png" alt="Konkura Consultores" class="img-responsive center-block"></div>
+                   <div class="row konkura">
+                       <div class="col-sm-12"><a href="#top" class="smoothScroll"><img src="img/konkura.png" alt="Konkura Consultores" class="img-responsive center-block"></a></div>
                    </div>
                </div>
            </div>

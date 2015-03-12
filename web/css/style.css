@@ -55,9 +55,13 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 /** SECTIONS **/
+.bg-white, .bg-yellow {
+    padding-top: 0;
+    line-height: 32px;
+}
+
 .bg-white {
     background-color: #fff;
-    padding-top: 0;
 }
 
 .bg-white .heading{
@@ -67,7 +71,6 @@ Text Domain: Mixen Communication & Web Technology
 .bg-white .heading span {
     width: 100%;
     font-size: 20px;
-    line-height: 31.76px;
     text-align: center;
     color: #4a4a4a;
     position: absolute;
@@ -78,6 +81,22 @@ Text Domain: Mixen Communication & Web Technology
 .bg-white .distinction .row {
     margin-bottom: 20px;
 }
+
+.bg-white h3 {
+    width: 500px;
+    font-weight: 300;
+    font-size: 28px;
+    color: #353535;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(53, 53, 53, 0.2);
+    margin: 0 auto;
+}
+
+.bg-white .container-fluid h3 {
+    border: none;
+}
+
 .bg-white .distinction h5 {
     font-size: 15px;
     line-height: 25px;
@@ -85,16 +104,50 @@ Text Domain: Mixen Communication & Web Technology
     text-align: center;
 }
 
-
+.bg-white .konkura {
+    padding: 180px 0;
+}
 
 .bg-yellow {
     background-color: #ffad00;
+    color: #fff;
+}
+
+.bg-yellow .nosotros {
+    padding-bottom: 100px;
+}
+
+.bg-yellow h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.bg-yellow p {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bg-yellow .nosotros .col-sm-6 {
+    padding: 0 75px;
 }
 
 .bg-img-cursos {
     background: url('../img/cursos_bg.jpg') repeat-x;
     height: 597px;
 }
+
+.bg-img-cursos h3 {
+    color: #fff;
+    margin-top: 15%;
+}
+
+
 
 /** CAROUSEL **/
 
@@ -147,6 +200,122 @@ Text Domain: Mixen Communication & Web Technology
      border: 1px solid rgba(245, 136, 30, 0.4);
 }
 
+/** BUTTONS **/
+.btn-white {
+    width: 240px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #040404;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto 0;
+    display: block;
+    
+}
+
+/** FOOTER **/
+footer {
+    background: #3d3d3d;
+}
+
+.footer-black {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.container .footer-black {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.footer-black h3 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: block;
+    padding-bottom: 8px;
+    margin: 0 auto 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.font-black .contacto {
+    font-family: 'Myriad Pro';
+    line-height: 20px;
+}
+
+.footer-black .contacto h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.footer-rights {
+    background-color: #323232;
+    margin: 10px 0px;
+}
+.footer-rights h6 {
+    font: 10px / 20px Helvetica;
+    color: #dfdfdf;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.footer-rights a { 
+    color: #fff;
+}
+
+.footer-black p, .footer-black ul li a, .footer-black address {
+    font-size: 12px;
+}
+.footer-black p, .footer-black address  {
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    margin: 20px auto;
+}
+
+.footer-black-2 {
+    background: #ff7a00;
+}
+
+.footer-black-2 p  {
+    padding-top: 8px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-black-2 a  {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-black ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-black ul li a::before {
+    content: '- ';
+}
+
+.footer-black ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: -30px;
+}
+
+.footer-black li a:hover {
+    color: #e3e3e3;
+    text-decoration: underline;
+}
 
 /** MISC **/
 svg {
