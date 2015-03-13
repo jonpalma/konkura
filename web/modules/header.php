@@ -30,18 +30,19 @@
                      <span class="icon-bar"></span>
                     </button>
                     <a href="index.html" class="navbar-brand">
+                       <img src="img/logo-sm.png" alt="" class="img-responsive logo-sm">
                         <img src="img/logo.png" alt="KONKURA logotipo" class="img-responsive logo-lg">
                     </a>
                 </div>
-                <div class="collapse navbar-collapse navbar-left" id="bs-konkura-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-right" id="bs-konkura-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li><a href="#" class="smoothScroll">Inicio</a></li>
-                      <li><a href="#">Nosotros</a></li>
+                      <li><a href="index.php">Inicio</a></li>
+                      <li><a href="nosotros.php">Nosotros</a></li>
                       <li><a href="#">Forma de trabajo</a></li>
-                      <li><a href="#">Capacitación</a></li>
+                      <li><a href="cursos.php">Capacitación</a></li>
                       <li><a href="#">Consultoría</a></li>
                       <li><a href="#">Noticias</a></li>
-                      <li><a href="#">Contacto</a></li>
+                      <li><a href="contacto.php">Contacto</a></li>
                   </ul>
           </div>
             </div>

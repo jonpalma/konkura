@@ -19,17 +19,11 @@ Text Domain: Mixen Communication & Web Technology
     margin-bottom: 0 !important;
 }
 
-.navbar-nav {
-    margin-top: 30px;
-}
-
 .navbar-nav > li > a, .dropdown-menu > li > a {
     color: #000 !important;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 20px;
-    margin: 0 5px;
-    padding: 15px 15px 5px;
     text-transform: uppercase;
 }
 
@@ -40,7 +34,7 @@ Text Domain: Mixen Communication & Web Technology
 .navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
 .dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
     background-image: none;
-    background-color: inherit !important;
+    background-color: inherit;
     box-shadow: none !important;
     border-bottom: 2px solid #ffad00;
 
@@ -51,7 +45,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .navbar .navbar-collapse {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 /** SECTIONS **/
@@ -82,6 +76,62 @@ Text Domain: Mixen Communication & Web Technology
     margin-bottom: 20px;
 }
 
+.bg-white .content h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.bg-white .content hr {
+    height: 11px;
+}
+
+.bg-white .content h5, .bg-white .content p {
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.bg-white .content h5 {
+    font-weight: 700;
+    color: #000;
+}
+
+.bg-white .content address {
+    width: 320px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+}
+
+.bg-white .content-cursos {
+    background-color: #fafafa;
+    color: #000;
+    font: 400 12px / 27px Verdana;
+    padding: 10px 15px 0;
+}
+
+.bg-white .content-cursos h4 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-left: 50px;
+}
+
+.bg-white .content-cursos ul li::before {
+    content: '- ';
+}
+
+.bg-white .content-cursos ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
 .bg-white h3 {
     width: 500px;
     font-weight: 300;
@@ -106,6 +156,27 @@ Text Domain: Mixen Communication & Web Technology
 
 .bg-white .konkura {
     padding: 180px 0;
+}
+
+.bg-white .socials  .social-heading {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg-white .socials  .social-heading h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.bg-white .socials ul {
+    width: 300px;
+}
+
+.bg-white .socials ul li {
+    list-style: none;
+    display: inline-block;
 }
 
 .bg-yellow {
@@ -137,6 +208,20 @@ Text Domain: Mixen Communication & Web Technology
     padding: 0 75px;
 }
 
+.bg-yellow .cintillo h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: none;
+    text-align: center;
+}
+
+.bg-yellow .cintillo span {
+    font-style: italic;
+    border-bottom: 1px solid #fff;
+    text-transform: lowercase;
+}
+
 .bg-img-cursos {
     background: url('../img/cursos_bg.jpg') repeat-x;
     height: 597px;
@@ -147,7 +232,45 @@ Text Domain: Mixen Communication & Web Technology
     margin-top: 15%;
 }
 
+.heading {
+    width: 400px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.heading h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+}
 
+/** ARROWS **/
+.left-arrow, .top-arrow {
+    position: relative;
+}
+
+.top-arrow::before {
+    content: url('../img/flechita.png');
+    position: absolute;
+    left: 0;
+}
+
+.left-arrow::before {
+    content: url('../img/flecha.png');
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+
+.top-arrow .content-cursos {
+    margin-left: 13px;
+}
+
+.left-arrow .yellow-left-arrow {
+    margin-left: 23px;
+    overflow: hidden;
+}
 
 /** CAROUSEL **/
 
@@ -200,6 +323,23 @@ Text Domain: Mixen Communication & Web Technology
      border: 1px solid rgba(245, 136, 30, 0.4);
 }
 
+/** FORMS **/
+.form-textfield {
+    height: 90px;
+}
+
+.form-textfield, .form-textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 148px;
+    resize: none;
+}
+
+
 /** BUTTONS **/
 .btn-white {
     width: 240px;
@@ -211,6 +351,16 @@ Text Domain: Mixen Communication & Web Technology
     margin: 20px auto 0;
     display: block;
     
+}
+
+.btn-yellow {
+    background-color: #ffca59;
+    width: 178px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #ffca59;
+    border-radius: 0;
 }
 
 /** FOOTER **/
@@ -318,6 +468,14 @@ footer {
 }
 
 /** MISC **/
+.margin-top {
+  margin-top: 50px;  
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
 svg {
     width: 100%;
 }
@@ -333,4 +491,75 @@ body {
     width: 100%;
     height: 561px;
     overflow: hidden;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 767px) {
+.logo-sm {
+    visibility: visible;
+}    
+    
+.logo-lg {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}    
+    
+.navbar-toggle {
+    border: 1px solid #ffad00;
+}    
+    
+.navbar-toggle .icon-bar {
+    background-color: #ffad00;
+}
+    
+.navbar-nav > li > a, .dropdown-menu > li > a, .navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
+.dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+    background-color: #fff;
+}
+
+.heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3 {
+    width: 100%;
+}
+
+.bg-yellow .nosotros .col-sm-6 {
+    padding: 0;
+}
+    
+}
+
+@media (min-width: 768px) {
+.logo-sm {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-nav {
+    margin-top: 0;
+}     
+    
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    font-size: 10px;
+    padding: 5px 5px 0;
+    margin: 0;
+}
+
+}
+
+@media (min-width: 992px) {
+.navbar-nav {
+    margin-top: 30px;
+}    
+    
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    font-size: 14px;
+    padding: 15px 15px 5px;
+    margin: 0 5px;
+}
+
+    
 }

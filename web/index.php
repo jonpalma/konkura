@@ -139,7 +139,7 @@
                    <div class="row  bg-img-cursos">
                        <div class="col-sm-12">
                            <h3>Descarga nuestros cursos en línea.</h3>
-                           <a href="" class="btn btn-white">Ver cursos disponibles</a>
+                           <a href="cursos.php" class="btn btn-white">Ver cursos disponibles</a>
                        </div>
                    </div>
                </div>

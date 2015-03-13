@@ -1,9 +1,9 @@
 <?php include('/modules/header.php'); ?>
     <!-- BEGIN HEADING -->
-    <div class="container-fluid">
+    <div class="container-fluid bg-yellow">
         <div class="row">
             <div class="col-sm-12">
-                <div class="center-block">
+                <div class="heading center-block">
                     <h1>Nosotros</h1>
                     <svg></svg>
                 </div>
@@ -12,26 +12,28 @@
     </div>
     <!-- END HEADING -->
     <!-- BEGIN CONTENT -->
-    <div class="jumbotron">
-        <div class="container">
+    <div class="jumbotron bg-white">
+        <div class="container content">
             <div class="row">
                 <div class="col-sm-12">
                     <h2>
                         Konkura nace en marzo de 2014 en la ciudad de Chihuahua con el propósito de contribuir al desarrollo organizacional
                         de las empresas, así como de instituciones educativas.
                     </h2>
+                    <hr />
                 </div>
                 <div class="col-sm-4">
-                    <div class="left_arrow">
-                       <img src="img/flechita.png" alt="yellow arrow" class="img-responsive yellow_left_arrow">
-                        <img src="img/nosotros.jpg" alt="Konkura Consultores" class="img-responsive">
+                    <div class="left-arrow">
+                        <div class="yellow-left-arrow">
+                           <img src="img/nosotros.jpg" alt="Konkura Consultores" class="img-responsive">
+                       </div>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="col-sm-12">
-                        <h5>konkura</h5>
+                        <h5 class="text-uppercase">konkura</h5>
                         <p>
-                            Somos un euipo multidisciplinario de profesionales que contribuye a mejorar la competitividad de las organizaciones
+                            Somos un equipo multidisciplinario de profesionales que contribuye a mejorar la competitividad de las organizaciones
                             o institucuines educativas, a través de la intervención en gestión de proyectos, capacitación y desarrollo organizacional.
                         </p>
                         <p>
@@ -61,9 +63,9 @@
     </div>
     <!-- END CONTENT -->
     <!-- BEGIN NOSOTROS -->
-           <div class="jumbotron">
+           <div class="jumbotron bg-yellow">
               <svg></svg>
-               <div class="container">
+               <div class="container nosotros">
                    <div class="row">
                        <div class="col-sm-6">
                            <h2>¿Por qué nosotros?</h2>
@@ -85,11 +87,14 @@
            </div>
     <!-- END NOSOTROS -->
     <!-- BEGIN SOCIAL -->
-    <div class="jumbotron">
-        <div class="container">
+    <div class="jumbotron bg-white">
+        <div class="container socials">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>Siguenos en:</h2>
+                   <div class="social-heading">
+                       <h2>Siguenos en:</h2>
+                       <hr />
+                   </div>
                     <ul class="center-block">
                         <li><a href=""><img src="img/social/fb.jpg" alt="Facebook" class="img-responsive"></a></li>
                         <li><a href=""><img src="img/social/yt.jpg" alt="Youtube" class="img-responsive"></a></li>
