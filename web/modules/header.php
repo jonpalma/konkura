@@ -29,7 +29,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">
+                    <a href="index.php" class="navbar-brand">
                        <img src="img/logo-sm.png" alt="" class="img-responsive logo-sm">
                         <img src="img/logo.png" alt="KONKURA logotipo" class="img-responsive logo-lg">
                     </a>

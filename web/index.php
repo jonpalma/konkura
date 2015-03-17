@@ -126,8 +126,7 @@
            </div>
            <!-- END FILOSOFIA -->
            <!-- BEGIN CURSOS -->
-           <div class="jumbotron bg-white">
-               <div class="container-fluid">
+               <div class="container-fluid bg-white">
                    <div class="row">
                        <div class="col-sm-12">
                           <div class="center-block">
@@ -136,14 +135,13 @@
                           </div>
                        </div>
                    </div>
-                   <div class="row  bg-img-cursos">
+                </div>
+                   <div class="jumbotron  bg-img-cursos">
                        <div class="col-sm-12">
                            <h3>Descarga nuestros cursos en línea.</h3>
                            <a href="cursos.php" class="btn btn-white">Ver cursos disponibles</a>
                        </div>
                    </div>
-               </div>
-           </div>
            <!-- END CURSOS -->
            <!-- BEGIN KONKURA -->
            <div class="jumbotron bg-white">

@@ -95,7 +95,7 @@
                        <h2>Siguenos en:</h2>
                        <hr />
                    </div>
-                    <ul class="center-block">
+                    <ul>
                         <li><a href=""><img src="img/social/fb.jpg" alt="Facebook" class="img-responsive"></a></li>
                         <li><a href=""><img src="img/social/yt.jpg" alt="Youtube" class="img-responsive"></a></li>
                         <li><a href=""><img src="img/social/insta.jpg" alt="Instagram" class="img-responsive"></a></li>

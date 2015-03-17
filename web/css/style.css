@@ -171,7 +171,8 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .bg-white .socials ul {
-    width: 300px;
+    text-align: center;
+    padding: 0;
 }
 
 .bg-white .socials ul li {
@@ -225,11 +226,13 @@ Text Domain: Mixen Communication & Web Technology
 .bg-img-cursos {
     background: url('../img/cursos_bg.jpg') repeat-x;
     height: 597px;
+    padding: 0;
 }
 
 .bg-img-cursos h3 {
     color: #fff;
-    margin-top: 15%;
+    padding-top: 299px;
+    text-align: center;
 }
 
 .heading {
@@ -506,6 +509,10 @@ body {
     top: 0;
     left: 0;
 }    
+
+.navbar-collapse {
+    margin-top: 10px;
+}
     
 .navbar-toggle {
     border: 1px solid #ffad00;
@@ -520,12 +527,31 @@ body {
     background-color: #fff;
 }
 
-.heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3 {
+.carousel-caption {
+    bottom: 30%;
+}      
+    
+.carousel-caption h1 {
+    font-size: 12px;
+}
+    
+.carousel-caption p {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    
+.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3 {
     width: 100%;
 }
 
 .bg-yellow .nosotros .col-sm-6 {
     padding: 0;
+}
+    
+.bg-img-cursos {
+    background-position: 38% 0%;
 }
     
 }
@@ -548,6 +574,18 @@ body {
     margin: 0;
 }
 
+.carousel-caption {
+    bottom: 10%;
+}    
+    
+.carousel-caption h1, .carousel-caption p {
+    width: 100%;
+}    
+    
+.bg-img-cursos {
+    background-position: 32% 0%;
+}    
+    
 }
 
 @media (min-width: 992px) {
@@ -561,5 +599,12 @@ body {
     margin: 0 5px;
 }
 
+.carousel-caption {
+    bottom: 30%;
+}
+    
+.bg-img-cursos {
+    background-position: 0% 0%;
+} 
     
 }

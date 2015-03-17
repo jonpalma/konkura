@@ -64,6 +64,7 @@
                                 <li>Gestión del conocimiento</li>
                                 <li>Planes de desarrollo para cuerpos académicos</li>
                             </ul>
+                            <svg></svg>
                         </div>   
                     </div>
                 </div>
@@ -83,6 +84,7 @@
                                 <li>Plan de desarrollo institucional</li>
                                 <li>Creación de contenidos didácticos interactivos</li>
                             </ul>
+                            <svg></svg>
                         </div>
                    </div> 
                 </div>
