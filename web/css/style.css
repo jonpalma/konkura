@@ -366,6 +366,25 @@ Text Domain: Mixen Communication & Web Technology
     border-radius: 0;
 }
 
+.btn-drop::before {
+    content: url('../img/blue-circle.png');
+    position: absolute;
+    left: 0;
+}
+
+.btn-drop {
+    width: 100%;
+    height: 68px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #3e3e3e;
+    font: 400 16px / 40px Open Sans;
+    text-align: left;
+    padding: 10px 30px 10px 80px;
+}
+
 /** FOOTER **/
 footer {
     background: #3d3d3d;

@@ -1,4 +1,4 @@
-<?php include('/modules/header.php');?>
+<?php include('modules/header.php');?>
      <!-- SLIDE -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                       <ol class="carousel-indicators">
@@ -153,4 +153,4 @@
            </div>
            <!-- END KONKURA -->
            
-<?php include('/modules/footer.php'); ?>
+<?php include('modules/footer.php'); ?>

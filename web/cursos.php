@@ -1,4 +1,4 @@
-<?php include('/modules/header.php'); ?>
+<?php include('modules/header.php'); ?>
  <!-- BEGIN HEADING -->
     <div class="container-fluid bg-yellow">
         <div class="row">
@@ -104,4 +104,4 @@
                </div>
            </div>
     <!-- END DUDAS -->
-<?php include('/modules/footer.php'); ?>
+<?php include('modules/footer.php'); ?>
