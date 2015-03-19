@@ -201,6 +201,42 @@ Text Domain: Mixen Communication & Web Technology
     font-size: 12px;
 }
 
+.bg-white .work p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.bg-white .metodology h2 {
+    width: 500px;
+    font: 400 30px / 20px Open Sans;
+    text-align: center;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.bg-white .metodology .tab-pane p {
+    font: 400 16px / 40px Open Sans;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.bg-white .metodology .tab-pane .advantages > li::before {
+    content: '- ';
+}
+
+.bg-white .metodology .tab-pane .advantages > li {
+    font-weight: 700;
+    margin-left: -30px;
+    list-style: none;
+}
+
+.big {
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+}
+
 .bg-yellow {
     background-color: #ffad00;
     color: #fff;
@@ -432,6 +468,39 @@ Text Domain: Mixen Communication & Web Technology
     width: 100%;
 }
 
+.metodology-tab > li {
+    margin: 10px 0;
+}
+
+.metodology-tab > li > a::before {
+    content: url('../img/gray-tick.png');
+    position: relative;
+    display: block;
+}
+
+.metodology-tab > li.active > a::before {
+    content: url('../img/white-tick.png');
+}
+
+.metodology-tab > li > a {
+    width: 223px;
+    height: 94px;
+    background-color: #f6f6f6;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0;
+    color: #a8a8a8;
+    margin: 0 auto;
+}
+
+.metodology-tab > li.active > a, .metodology-tab > li.active > a:hover, .metodology-tab > li.active > a:focus, .metodology-tab > li.active > a:active {
+    background-color: #ffad00;
+    color: #fff;
+}
+
+
+
 /** FOOTER **/
 footer {
     background: #3d3d3d;
@@ -612,7 +681,7 @@ body {
     left: 0;
 }
     
-.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3, .bg-yellow h2.center {
+.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3, .bg-yellow h2.center, .bg-white .metodology h2 {
     width: 100%;
 }
 

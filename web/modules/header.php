@@ -38,7 +38,7 @@
                   <ul class="nav navbar-nav">
                       <li><a href="index.php">Inicio</a></li>
                       <li><a href="nosotros.php">Nosotros</a></li>
-                      <li><a href="#">Forma de trabajo</a></li>
+                      <li><a href="como-trabajamos.php">Forma de trabajo</a></li>
                       <li><a href="cursos.php">Capacitación</a></li>
                       <li><a href="capacitacion-desarrollo.php">Consultoría</a></li>
                       <li><a href="#">Noticias</a></li>
