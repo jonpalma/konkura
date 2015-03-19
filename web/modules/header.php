@@ -40,7 +40,7 @@
                       <li><a href="nosotros.php">Nosotros</a></li>
                       <li><a href="#">Forma de trabajo</a></li>
                       <li><a href="cursos.php">Capacitación</a></li>
-                      <li><a href="#">Consultoría</a></li>
+                      <li><a href="capacitacion-desarrollo.php">Consultoría</a></li>
                       <li><a href="#">Noticias</a></li>
                       <li><a href="contacto.php">Contacto</a></li>
                   </ul>

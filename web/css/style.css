@@ -180,6 +180,27 @@ Text Domain: Mixen Communication & Web Technology
     display: inline-block;
 }
 
+.bg-white .values h2, .bg-white .values h5 {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 700;
+}
+
+.bg-white .values h2 {
+    text-transform: uppercase;
+    color: #3e3e3e;
+}
+
+.bg-white .values h5 {
+    color: rgba(62, 62, 62, 0.8);
+    font-style: italic;
+    font-size: 18px;
+}
+
+.bg-white .values p {
+    font-size: 12px;
+}
+
 .bg-yellow {
     background-color: #ffad00;
     color: #fff;
@@ -187,6 +208,12 @@ Text Domain: Mixen Communication & Web Technology
 
 .bg-yellow .nosotros {
     padding-bottom: 100px;
+}
+
+.bg-yellow h2.center {
+    width: 539px;
+    margin: 20px auto 50px;
+    text-align: center;
 }
 
 .bg-yellow h2 {
@@ -221,6 +248,14 @@ Text Domain: Mixen Communication & Web Technology
     font-style: italic;
     border-bottom: 1px solid #fff;
     text-transform: lowercase;
+}
+
+.bg-yellow .models h6 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    display: block;
 }
 
 .bg-img-cursos {
@@ -369,7 +404,8 @@ Text Domain: Mixen Communication & Web Technology
 .btn-drop::before {
     content: url('../img/blue-circle.png');
     position: absolute;
-    left: 0;
+    left: 10px;
+    top: 19px;
 }
 
 .btn-drop {
@@ -382,7 +418,18 @@ Text Domain: Mixen Communication & Web Technology
     color: #3e3e3e;
     font: 400 16px / 40px Open Sans;
     text-align: left;
-    padding: 10px 30px 10px 80px;
+    padding: 10px 30px 10px 50px;
+}
+
+.btn-drop::after {
+    content: url('../img/caret.png');
+    position: absolute;
+    right: 10px;
+    top: 19px;
+}
+
+.courses-drop{
+    width: 100%;
 }
 
 /** FOOTER **/
@@ -515,6 +562,10 @@ body {
     overflow: hidden;
 }
 
+.img-border {
+    border: 15px solid #fff;
+}
+
 /** MEDIA QUERIES **/
 
 @media (max-width: 767px) {
@@ -561,7 +612,7 @@ body {
     left: 0;
 }
     
-.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3 {
+.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3, .bg-yellow h2.center {
     width: 100%;
 }
 
@@ -572,6 +623,13 @@ body {
 .bg-img-cursos {
     background-position: 38% 0%;
 }
+
+.btn-drop {
+}
+    
+.btn-drop, .courses-drop > li a {
+    font-size: 10px;
+}    
     
 }
 
