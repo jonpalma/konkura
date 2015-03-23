@@ -5,7 +5,12 @@
             <div class="col-sm-12">
                 <div class="heading center-block">
                     <h1>Forma de trabajo</h1>
-                    <svg></svg>
+                    <svg version="1.1" class="heading-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -14,7 +19,7 @@
 <!-- BEGIN CONTENT -->
 <div class="jumbotron bg-white">
     <div class="container work margin-top">
-        <div class="row">
+        <div class="row padding-tb">
             <p>Sabemos que los líderes de las organizaciones ocupan la mayor parte de su tiempo en enfrentar el día a día; sin poder atender adecuadamente las estrategias que permiten fortalecer la organización.</p>
             <p>nuestra metodología de intervención se basa en tres aspectos fundamentales:</p>
             <p class="big">Fortalecer la gestión operativa.<br />Énfasis en la eficiencia y eficacia de la organización.<br />Impacten en la competitividad de la empresa.</p>
@@ -26,8 +31,11 @@
 <div class="jumbotron bg-yellow">
     <div class="container">
         <div class="row">
-            <svg></svg>
-            <h3>En Konkura consideramos que el diagnóstico como una estrategia para diseñar soluciones que impacten significativamente en los resultados.</h3>
+            <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
+                  <polygon points="0.641,0 89.141,0 44.891,38 "/>
+            </svg>
+            <h3 class="text-center padding-tb">En Konkura consideramos que el diagnóstico como una estrategia para diseñar soluciones que impacten significativamente en los resultados.</h3>
         </div>
     </div>
 </div>

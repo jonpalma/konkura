@@ -40,11 +40,16 @@
                     </div>
            <!-- END SLIDE -->
            <!-- BEGIN DISTINCION -->
-           <div class="jumbotron bg-white">
-              <div class="heading">
-                  <svg></svg>
+           <div class="container-fluid bg-gray">
                   <span>Nos distinguimos por:</span>
-              </div>
+           </div>
+           <div class="bg-white margin-bottom">
+                  <svg version="1.1" class="triangle-gray" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
+                  <polygon points="0.641,0 89.141,0 44.891,38 "/>
+                  </svg>
+           </div>
+           <div class="jumbotron bg-white">
               <div class="container distinction">
                    <div class="row">
                        <div class="col-sm-3">
@@ -87,7 +92,10 @@
            <!-- END DISTICION -->
            <!-- BEGIN NOSOTROS -->
            <div class="jumbotron bg-yellow">
-              <svg></svg>
+              <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
+                  <polygon points="0.641,0 89.141,0 44.891,38 "/>
+            </svg>
                <div class="container nosotros">
                    <div class="row">
                        <div class="col-sm-6">

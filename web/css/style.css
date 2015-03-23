@@ -54,6 +54,10 @@ Text Domain: Mixen Communication & Web Technology
     line-height: 32px;
 }
 
+.bg-gray {
+    background-color: #eaeaea;
+}
+
 .bg-white {
     background-color: #fff;
 }
@@ -62,14 +66,14 @@ Text Domain: Mixen Communication & Web Technology
     position: relative;
 }
 
-.bg-white .heading span {
+.bg-gray span {
     width: 100%;
     font-size: 20px;
     text-align: center;
     color: #4a4a4a;
-    position: absolute;
-    bottom: 50%;
-    left: 0;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0;
 }
 
 .bg-white .distinction .row {
@@ -499,6 +503,37 @@ Text Domain: Mixen Communication & Web Technology
     color: #fff;
 }
 
+/** SVG **/
+.heading-bottom {
+    position: relative;
+    bottom: 40px;
+}
+
+.heading-bottom polygon, .heading-bottom line, .triangle-white polygon {
+    stroke: #fff;
+    fill: #fff;
+    stroke-width: 1px;
+}
+
+.triangle-gray polygon {
+    stroke: #eaeaea;
+    fill: #eaeaea;
+    stroke-width: 1px;
+}
+
+.yellow-bottom {
+    stroke: #ffad00;
+    fill: #ffad00;
+    stroke-width: 1px;
+}
+
+.triangle-white, .triangle-gray {
+    width: 85px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 /** FOOTER **/
@@ -614,10 +649,6 @@ footer {
     margin-bottom: 50px;
 }
 
-svg {
-    width: 100%;
-}
-
 body {
     font-family: Open Sans, sans-serif;
     overflow-x: hidden;
@@ -635,6 +666,9 @@ body {
     border: 15px solid #fff;
 }
 
+.padding-tb {
+    padding: 80px 0;
+}
 /** MEDIA QUERIES **/
 
 @media (max-width: 767px) {
