@@ -1,6 +1,6 @@
 <?php include('modules/header.php');?>
 <!-- BEGIN HEADING -->
-    <div class="container-fluid bg-yellow">
+    <div class="container-fluid bg-yellow heading-title">
         <div class="row">
             <div class="col-sm-12">
                 <div class="heading center-block">
@@ -22,6 +22,7 @@
             <div class="row">
                 <h2>Cursos y talleres por áreas de especialidad</h2>
                 <hr />
+                <!-- NO SE UTILIZA
                 <div class="col-sm-6 margin-bottom">
                     <div class="dropdown">
                       <button class="dropdown-toggle btn-drop" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -80,6 +81,89 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Reclutamiento y Selección</a></li>
                       </ul>
                    </div>
+                </div> -->
+                <div class="col-sm-3">
+                   <div class="top-arrow">
+                       <div class="content-cursos">
+                            <h4>Desarrollo de habilidades</h4>
+                            <ul>
+                                <li>Negociación y Manejo de conflictos</li>
+                                <li>Formación de Instructores</li>
+                                <li>Imagen Personal</li>
+                                <li>Creatividad e Innovación</li>
+                                <li>Planeación estratégica</li>
+                                <li>Orientación a Resultados</li>
+                                <li>Trabajo en Equipo</li>
+                                <li>Juntas Efectivas</li>
+                            </ul>
+                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                    </svg>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="top-arrow">
+                        <div class="content-cursos">
+                            <h4>Liderazgo y Coaching</h4>
+                            <ul>
+                                <li>Desarrollo de Habilidades Gerenciales</li>
+                                <li>Equipo de Alto Desempeño</li>
+                                <li>Coaching Personal y de Equipos</li>
+                                <li>Gestión Efectiva de Equipos</li>
+                                <li>Liderazgo Situacional</li>
+                                <li>Liderazgo Transformacional</li>
+                            </ul>
+                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                    </svg>
+                        </div>   
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                   <div class="top-arrow">
+                       <div class="content-cursos">
+                            <h4>Desarrollo personal</h4>
+                            <ul>
+                                <li>Administración del Tiempo</li>
+                                <li>Comunicación</li>
+                                <li>Presentaciones de Alto Impacto</li>
+                                <li>Manejo y Gestión del Cambio</li>
+                            </ul>
+                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                    </svg>
+                        </div>
+                   </div> 
+                </div>
+                <div class="col-sm-3">
+                   <div class="top-arrow">
+                       <div class="content-cursos">
+                            <h4>Recursos humanos</h4>
+                            <ul>
+                                <li>Cómo hacer un DNC efectivo</li>
+                                <li>Diseño de Programas de Capacitación</li>
+                                <li>Diseño de Contenidos de Capacitación</li>
+                                <li>Capacitación por Competencias</li>
+                                <li>Reclutamiento y Selección</li>
+                            </ul>
+                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                    </svg>
+                        </div>
+                   </div> 
                 </div>
             </div>
         </div>

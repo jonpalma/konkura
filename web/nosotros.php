@@ -1,6 +1,6 @@
 <?php include('modules/header.php'); ?>
     <!-- BEGIN HEADING -->
-    <div class="container-fluid bg-yellow">
+    <div class="container-fluid bg-yellow heading-title">
         <div class="row">
             <div class="col-sm-12">
                 <div class="heading center-block">
@@ -94,6 +94,74 @@
                </div>
            </div>
     <!-- END NOSOTROS -->
+    <!-- BEGIN FILOSOFIA -->
+    <div class="jumbotron bg-white">
+        <div class="container philosophy">
+            <div class="row">
+                <div class="col-sm-12 margin-bottom">
+                    <h3>Filosofía:</h3>
+                </div>
+                    <div class="col-sm-12">
+                       <div class="center-block">
+                           <div class="value">
+                            <p class="init">
+                                f<br />e<br />a<br />r
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="value">
+                            <p class="init">
+                                f<br />o<br />c<br />u<br />s
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="value">
+                            <p class="init">
+                                k<br />e<br />y
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="value value-last">
+                            <p class="init">
+                                f<br />e<br />a<br />r
+                            </p>
+                            <p class="second">
+                                Living<br />Our<br />Value<br />Everyday
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p class="init">
+                                i<br />d<br />e<br />a
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="clearfix"></div>
+                       </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="value">
+                            <p class="init">
+                                g<br />r<br />o<br />w
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="value">
+                            <p class="init">
+                                t<br />e<br />a<br />m
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                        <div class="value">
+                            <p class="init">
+                                t<br />i<br />p
+                            </p>
+                            <p class="second">hola</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FILOSOFIA -->
     <!-- BEGIN SOCIAL -->
     <div class="jumbotron bg-white">
         <div class="container socials">

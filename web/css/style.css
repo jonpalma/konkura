@@ -32,7 +32,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
-.dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+.dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
     background-image: none;
     background-color: inherit;
     box-shadow: none !important;
@@ -40,7 +40,7 @@ Text Domain: Mixen Communication & Web Technology
 
 }
 
-.navbar.navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+.navbar.navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
     background-image: none;
 }
 
@@ -246,6 +246,10 @@ Text Domain: Mixen Communication & Web Technology
     color: #fff;
 }
 
+.heading-title{
+    height: 202px;
+}
+
 .bg-yellow .nosotros {
     padding-bottom: 100px;
 }
@@ -320,7 +324,35 @@ Text Domain: Mixen Communication & Web Technology
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 55px;
+}
+
+.philosophy .value {
+    background-color: #00a99d;
+    color: #fff;
+    font: 700 20px / 50px Open Sans;
+    height: 280px;
+    width: 165px;
+    margin: 0 10px 30px;
+    float: left;
+}
+
+.philosophy .value:hover {
+    background-color: #ffad00;
+}
+
+.value-last {
+    margin-right: 0;
+}
+
+.value .init {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.value .second {
+    text-align: left;
+    display: none;
 }
 
 /** ARROWS **/
@@ -669,6 +701,10 @@ body {
 .padding-tb {
     padding: 80px 0;
 }
+
+.caret {
+    border-top: 4px solid #FFAD00;
+}
 /** MEDIA QUERIES **/
 
 @media (max-width: 767px) {
@@ -768,14 +804,10 @@ body {
     
 }
 
-@media (min-width: 992px) {
-.navbar-nav {
-    margin-top: 30px;
-}    
-    
+@media (min-width: 992px) { 
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size: 14px;
-    padding: 15px 15px 5px;
+    padding: 15px 10px 5px;
     margin: 0 5px;
 }
 

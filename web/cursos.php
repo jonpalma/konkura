@@ -1,6 +1,6 @@
 <?php include('modules/header.php'); ?>
  <!-- BEGIN HEADING -->
-    <div class="container-fluid bg-yellow">
+    <div class="container-fluid bg-yellow heading-title">
         <div class="row">
             <div class="col-sm-12">
                 <div class="heading center-block">
