@@ -346,12 +346,14 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .value .init {
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
 
 .value .second {
-    text-align: left;
+    text-align: center;
+    font-weight: 700;
     display: none;
 }
 
@@ -768,7 +770,13 @@ body {
     
 .btn-drop, .courses-drop > li a {
     font-size: 10px;
-}    
+}
+    
+.philosophy .value {
+    width: 165px;
+    position: relative;
+    left: 15.5%;
+}     
     
 }
 
@@ -800,6 +808,19 @@ body {
     
 .bg-img-cursos {
     background-position: 32% 0%;
+}
+
+.philosophy .value {
+    width: 120px;
+    position: static;
+}    
+    
+.value-first-row{
+    margin-left: 0 !important;
+}
+
+.value-second-row{
+    margin-left: 140px !important;
 }    
     
 }
@@ -817,6 +838,19 @@ body {
     
 .bg-img-cursos {
     background-position: 0% 0%;
-} 
+}
+
+.philosophy .value {
+    width: 165px;
+    position: static;
+}    
+    
+.value-first-row{
+    margin-left: 140px !important;
+}
+
+.value-second-row{
+    margin-left: 325px !important;
+}
     
 }

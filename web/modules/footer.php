@@ -55,6 +55,13 @@
             $(document).ready(function(){
                 $("#myCarousel").carousel();
                 $('body').scrollspy();
+                $('.value').hover(function() {
+                    $('.init', this).hide();
+                    $('.second', this).show();
+                }, function() {
+                    $('.second', this).hide();
+                    $('.init', this).show();
+                });
             });
     </script>
 </footer>

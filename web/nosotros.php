@@ -102,61 +102,60 @@
                     <h3>Filosofía:</h3>
                 </div>
                     <div class="col-sm-12">
-                       <div class="center-block">
-                           <div class="value">
+                           <div class="value value-first-row">
                             <p class="init">
                                 f<br />e<br />a<br />r
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Face<br />Everything<br />And<br />Rise</p>
                         </div>
                         <div class="value">
                             <p class="init">
                                 f<br />o<br />c<br />u<br />s
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Follow<br />one<br />Course<br />Untill<br />Successful</p>
                         </div>
                         <div class="value">
                             <p class="init">
                                 k<br />e<br />y
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Knowledge<br />Empowers<br />You</p>
                         </div>
-                        <div class="value value-last">
+                        <div class="value">
                             <p class="init">
-                                f<br />e<br />a<br />r
+                                l<br />o<br />v<br />e
                             </p>
                             <p class="second">
                                 Living<br />Our<br />Value<br />Everyday
                             </p>
                         </div>
-                        <div class="value">
+                        <div class="value value-last">
                             <p class="init">
                                 i<br />d<br />e<br />a
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Imagine<br />Dare<br />Execute<br />Achieve</p>
                         </div>
                         <div class="clearfix"></div>
-                       </div>
                     </div>
                     <div class="col-sm-12">
-                        <div class="value">
+                        <div class="value value-second-row">
                             <p class="init">
                                 g<br />r<br />o<br />w
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Goals<br />Reality<br />Options<br />Will</p>
                         </div>
                         <div class="value">
                             <p class="init">
                                 t<br />e<br />a<br />m
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Together<br />Everyone<br />Achieve<br />More</p>
                         </div>
                         <div class="value">
                             <p class="init">
                                 t<br />i<br />p
                             </p>
-                            <p class="second">hola</p>
+                            <p class="second">Theory<br />Into<br />Practice</p>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
             </div>
         </div>
