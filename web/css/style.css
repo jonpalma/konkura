@@ -357,6 +357,15 @@ Text Domain: Mixen Communication & Web Technology
     display: none;
 }
 
+.gallery h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
 /** ARROWS **/
 .left-arrow, .top-arrow {
     position: relative;
