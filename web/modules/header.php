@@ -48,7 +48,7 @@
                       </li>
                       <li><a href="capacitacion-desarrollo.php">Capacitación</a></li>
                       <li><a href="galeria.php">Galería</a></li>
-                      <li><a href="#">Noticias</a></li>
+                      <li><a href="noticias.php">Noticias</a></li>
                       <li><a href="contacto.php">Contacto</a></li>
                   </ul>
           </div>
