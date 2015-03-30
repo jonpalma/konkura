@@ -121,7 +121,7 @@
                <div class="container cintillo">
                    <div class="row padding-tb">
                        <div class="col-sm-12">
-                           <h2>Para cualquier duda de nuestros cursos: <span>info@konkura.com</span></h2>
+                           <h2>Para cualquier duda de nuestros cursos: <span>contacto@konkura.com</span></h2>
                        </div>
                    </div>
                </div>

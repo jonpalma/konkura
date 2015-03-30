@@ -283,7 +283,7 @@ Text Domain: Mixen Communication & Web Technology
 .bg-yellow .cintillo h2 {
     font-size: 25px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     border: none;
     text-align: center;
 }
