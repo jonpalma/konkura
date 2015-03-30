@@ -28,7 +28,7 @@
 </div>
 <!-- END CONTENT -->
 <!-- BEGIN RIBBON -->
-<div class="jumbotron bg-yellow">
+<div class="jumbotron bg-img-cursos">
     <div class="container">
         <div class="row">
             <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

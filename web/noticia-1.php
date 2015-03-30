@@ -21,17 +21,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <div class="col-sm-12 blog-section">
+                <div class="col-sm-12 blog-section blog-section-last">
                     <h2>Como el saber jugar ajedrez te ayuda a tomar mejores decisiones</h2>
                     <img src="img/noticia-1.jpg" alt="" class="img-responsive">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ex facilis molestiae accusantium blanditiis omnis alias quos sapiente nam. Incidunt expedita, quasi unde alias modi error. Cum recusandae sequi autem?</p>
-                    <a href="noticia-1.php" class="btn btn-yellow">Ver más</a>
-                </div>
-                <div class="col-sm-12 blog-section blog-section-last">
-                    <h2>Oculus rift la nueva experiencia</h2>
-                    <img src="img/noticia-2.jpg" alt="" class="img-responsive">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ex facilis molestiae accusantium blanditiis omnis alias quos sapiente nam. Incidunt expedita, quasi unde alias modi error. Cum recusandae sequi autem?</p>
-                    <a href="#" class="btn btn-yellow">Ver más</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non delectus cupiditate voluptatem reiciendis hic, repellendus a, similique excepturi laboriosam optio quo earum ab facilis minima amet asperiores corrupti labore quis!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quam, sint! Sed, quibusdam et tempora, sunt asperiores quas consequuntur fuga maiores saepe quidem delectus eaque magnam dignissimos ab consectetur, possimus!</p>
                 </div>
             </div>
             <div class="col-sm-4 sidebar">

@@ -325,6 +325,7 @@ Text Domain: Mixen Communication & Web Technology
     text-transform: uppercase;
     text-align: center;
     margin-top: 55px;
+    font-size: 34px;
 }
 
 .philosophy .value {
@@ -377,7 +378,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .blog-section h2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 400;
     color: #3e3e3e;
     padding-bottom: 10px;
@@ -386,14 +387,15 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .blog-section p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 25px;
+    text-align: justify;
     margin: 30px 0 20px;
 }
 
 .sidebar h2 { 
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 40px;
     text-align: right;
@@ -410,7 +412,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .sidebar ul > li {
-    font-size: 20px;
+    font-size: 14px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     text-align: right;
     list-style: none;
@@ -891,8 +893,8 @@ body {
 
 @media (min-width: 992px) { 
 .navbar-nav > li > a, .dropdown-menu > li > a {
-    font-size: 14px;
-    padding: 15px 10px 5px;
+    font-size: 12px;
+    padding: 15px 8px 5px;
     margin: 0 5px;
 }
 

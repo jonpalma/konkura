@@ -38,6 +38,7 @@
                   <ul class="nav navbar-nav">
                       <li><a href="index.php">Inicio</a></li>
                       <li><a href="nosotros.php">Nosotros</a></li>
+                      <li><a href="#">Productos</a></li>
                       <li><a href="como-trabajamos.php">Forma de trabajo</a></li>
                       <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consultoría <b class="caret"></b></a>
@@ -46,7 +47,12 @@
                         <li><a href="cursos.php">Empresarial</a></li>
                       </ul>
                       </li>
-                      <li><a href="capacitacion-desarrollo.php">Capacitación</a></li>
+                      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Capacitación <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Educativa</a></li>
+                        <li><a href="capacitacion-desarrollo.php">Empresarial</a></li>
+                      </ul>
+                      </li>
                       <li><a href="galeria.php">Galería</a></li>
                       <li><a href="noticias.php">Noticias</a></li>
                       <li><a href="contacto.php">Contacto</a></li>

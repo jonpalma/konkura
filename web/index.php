@@ -145,9 +145,11 @@
                    </div>
                 </div>
                    <div class="jumbotron  bg-img-cursos">
-                       <div class="col-sm-12">
-                           <h3>Descarga nuestros cursos en línea.</h3>
-                           <a href="cursos.php" class="btn btn-white">Ver cursos disponibles</a>
+                       <div class="container">
+                          <div class="row">
+                              <h3>Descarga nuestros cursos en línea.</h3>
+                              <a href="cursos.php" class="btn btn-white">Ver cursos disponibles</a>
+                          </div>
                        </div>
                    </div>
            <!-- END CURSOS -->
