@@ -366,6 +366,56 @@ Text Domain: Mixen Communication & Web Technology
     margin-bottom: 20px;
 }
 
+/** BLOG **/
+.blog-section {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffad00;
+}
+
+.blog-section-last {
+    border-bottom: none;
+}
+
+.blog-section h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #3e3e3e;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.blog-section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 30px 0 20px;
+}
+
+.sidebar h2 { 
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    padding-left: 40px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul > li {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: right;
+    list-style: none;
+}
+
 /** ARROWS **/
 .left-arrow, .top-arrow {
     position: relative;
@@ -482,6 +532,11 @@ Text Domain: Mixen Communication & Web Technology
     padding: 20px;
     border: 1px solid #ffca59;
     border-radius: 0;
+}
+
+.btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+    color: #fff;
+    background-color: #FFAF00;
 }
 
 .btn-drop::before {
