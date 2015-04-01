@@ -66,23 +66,15 @@
                <div class="container nosotros">
                    <div class="row">
                        <div class="col-sm-6">
-                           <h2>¿Por qué nosotros?</h2>
+                           <h2><?php echo CFS()->get('nosotros_header'); ?></h2>
                            <p>
-                               Somos un equipo multidiscilinario de profesionales que contribuye a mejorar la competitividad de las organizaciones
-                               o instituciones educativas, a través de la intervención en gestión de proyectos, capacitación y desarrollo organizacional.
-                           </p>
-                           <p>
-                               Nuestro despacho cuenta con la capacidad y experiencia para
-                               responder a las necesidades y resolver las demandas de las
-                               organizaciones empresariales y educativas.
+                               <?php echo CFS()->get('nosotros_texto'); ?>
                            </p>
                        </div>
                        <div class="col-sm-6">
-                           <h2>¿Qué hacemos?</h2>
+                           <h2><?php echo CFS()->get('hacemos_header'); ?></h2>
                            <p>
-                               En Konkura ofrecemos soluciones para co-ayudar en la competitividad de las organizaciones, a través de relaciones
-                               basadas en la confianza. Nos ocupamos de satisfacer la necesidad específica de nuestros clientes mediante un enfoque
-                               sistématico y metodologías pertinentes.
+                               <?php echo CFS()->get('hacemos_texto'); ?>
                            </p>
                        </div>
                    </div>

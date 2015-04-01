@@ -24,7 +24,7 @@
            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
              <div class="col-sm-12 blog-section">
                  <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                 <a href="<?php the_permalink();?>"><?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_articles_thumbs' ); }?></a>
+                 <a href="<?php the_permalink();?>"><?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_articles_thumbs', array( 'class' => 'img-responsive' ) ); }?></a>
                  <?php the_content();?>
              </div>
 
@@ -32,16 +32,16 @@
           <h1>No se encontraron articulos</h1>
           <?php endif; ?>
               <div class="col-sm-12 margin-top">
-                <div class="col-sm-6">
+                <div class="col-sm-6 margin-bottom">
                     <?php $prev_post = get_previous_post();
                                         if (!empty( $prev_post )): ?>
-                                          <a class="btn btn-yellow" href="<?php echo get_permalink( $prev_post->ID ); ?>">&lt; Anterior</a>
+                                          <a class="btn btn-yellow pag-left margin-bottom" href="<?php echo get_permalink( $prev_post->ID ); ?>">&lt; Anterior</a>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-6 text-right">
+                <div class="col-sm-6">
                     <?php $next_post = get_next_post();
                                         if (!empty( $next_post )): ?>
-                                      <a class="btn btn-yellow" href="<?php echo get_permalink( $next_post->ID ); ?>">Siguiente &gt;</a>
+                                      <a class="btn btn-yellow pag-right margin-bottom" href="<?php echo get_permalink( $next_post->ID ); ?>">Siguiente &gt;</a>
                     <?php endif; ?>
                 </div>
             </div>

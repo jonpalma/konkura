@@ -5,11 +5,15 @@ register_nav_menus( array(
 	));
 
 //Filters
-add_filter('next_posts_link_attributes', 'posts_link_attributes');
-add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
 
-function posts_link_attributes() {
-    return 'class="btn btn-yellow"';
+function posts_link_attributes_next() {
+    return 'class="btn btn-yellow pag-right margin-bottom"';
+}
+
+function posts_link_attributes_previous() {
+    return 'class="btn btn-yellow pag-left margin-bottom"';
 }
 
 //Agregar thumbs para los post

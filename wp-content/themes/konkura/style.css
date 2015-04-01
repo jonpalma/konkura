@@ -34,10 +34,14 @@ Text Domain: Mixen Communication & Web Technology
 .navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
 .dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
     background-image: none;
-    background-color: inherit;
+    background-color: #fff !important;
     box-shadow: none !important;
     border-bottom: 2px solid #ffad00;
 
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color: #fff !important;
 }
 
 .navbar.navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
@@ -358,13 +362,14 @@ Text Domain: Mixen Communication & Web Technology
     display: none;
 }
 
-.gallery h3 {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.gallery h3, .title {
+    font-family: Open Sans !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 20px !important;
 }
 
 /** BLOG **/
@@ -854,7 +859,12 @@ body {
     width: 165px;
     position: relative;
     left: 15.5%;
-}     
+}
+    
+.pag-left, .pag-right {
+    display: block;
+    margin: 0 auto;
+}
     
 }
 
@@ -872,6 +882,7 @@ body {
     
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size: 10px;
+    letter-spacing: -1px;
     padding: 5px 5px 0;
     margin: 0;
 }
@@ -906,6 +917,7 @@ body {
 @media (min-width: 992px) { 
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size: 12px;
+    letter-spacing: 1px;
     padding: 15px 8px 5px;
     margin: 0 5px;
 }
@@ -929,6 +941,14 @@ body {
 
 .value-second-row{
     margin-left: 325px !important;
+}
+    
+.pag-left {
+    float: left !important;
+}
+    
+.pag-right {
+    float: right !important;
 }
     
 }
