@@ -33,13 +33,13 @@
                        </div>
                        <div class="col-sm-3">
                            <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
-                           <h5>hacemos las cosas simples</h5>
+                           <h5>Hacemos las cosas simples</h5>
                        </div>
                    </div>
                    <div class="row">
                        <div class="col-sm-3">
                            <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
-                           <h5>Desarrolamos lenguaje significativo</h5>
+                           <h5>Desarrollamos lenguaje significativo</h5>
                        </div>
                        <div class="col-sm-3">
                            <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
