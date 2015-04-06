@@ -81,24 +81,37 @@
                </div>
            </div>
            <!-- END NOSOTROS -->
-           <!-- BEGIN FILOSOFIA -->
+           <!-- BEGIN EVENTOS -->
            <div class="jumbotron bg-white">
                <div class="container">
                    <div class="row">
                        <div class="col-sm-12">
-                           <h3>Filosofía</h3>
+                           <h3>Próximos eventos</h3>
+                       </div>
+                       <div class="col-sm-12 margin-top">
+                           <div class="col-sm-2"></div>
+                           <div class="col-sm-8 events">
+                               <h4 class="margin-top"><?php echo CFS()->get('nombre_curso'); ?></h4>
+                               <p class="description"><?php echo CFS()->get('descripcion_curso'); ?></p>
+                               <p>Duración: <?php echo CFS()->get('duracion_curso'); ?></p>
+                               <p>Días: <?php echo CFS()->get('dias_curso'); ?></p>
+                               <p>Hora: <?php echo CFS()->get('hora_curso'); ?></p>
+                               <p>Lugar: <?php echo CFS()->get('lugar_curso'); ?></p>
+                               
+                               <a href="#" class="btn btn-white btn-full margin-top margin-bottom">Descargar</a>
+                           </div>
+                           <div class="col-sm-2"></div>
                        </div>
                    </div>
                </div>
            </div>
-           <!-- END FILOSOFIA -->
+           <!-- END EVENTOS -->
            <!-- BEGIN CURSOS -->
                <div class="container-fluid bg-white">
                    <div class="row">
                        <div class="col-sm-12">
-                          <div class="center-block">
+                          <div class="center-block margin-bottom">
                               <h3>Cursos</h3>
-                              <svg></svg>
                           </div>
                        </div>
                    </div>
@@ -116,7 +129,65 @@
            <div class="jumbotron bg-white">
                <div class="container">
                    <div class="row konkura">
-                       <div class="col-sm-12"><a href="#top" class="smoothScroll"><img src="<?php bloginfo('template_url')?>/img/konkura.png" alt="Konkura Consultores" class="img-responsive center-block"></a></div>
+                       <div class="col-sm-12">
+                          <h3>Experiencias</h3>
+                           <div id="myCarousel" style="height:250px;" class="carousel slide" data-ride="carousel">
+                               <!-- Indicators -->
+            <ol class="carousel-indicators margin-top">
+                <?php 
+                    $loop = new WP_Query(array( 'post_type' => 'testimonial', 'order' => 'ASC', 'showposts' => '11'));
+                    $i = 0;
+                    if($loop->have_posts()):
+                    while($loop->have_posts()) : $loop->the_post();
+                    if($i == 0) { ?>
+                        <li data-target="#myCarousel" data-slide-to="<?php echo $i;?>" class="active"></li>
+               <?php
+                    }else { ?>
+                        <li data-target="#myCarousel" data-slide-to="<?php echo $i;?>"></li>
+               <?php
+                    }
+                    $i++;
+                    endwhile;
+                    else: ?>
+                    <p><?php _e( 'Oh God Why?' ); ?></p>
+                    <?php endif; ?>
+            </ol>
+                          <!-- Wrapper for slides -->
+            <div class="carousel-inner" >
+              <?php 
+                $j = 0;
+                if($loop->have_posts()):
+                while($loop->have_posts()) : $loop->the_post();
+                if($use_excerpt){
+                     $testimonial['content'] = get_the_excerpt();
+                } else {				
+                     $testimonial['content'] = get_the_content();
+                }
+                
+                if($j == 0) { ?>
+                    <div class="item active" style="height:250px; width:100%;">
+             <?php
+                }else { ?>
+                    <div class="item" style="height:250px; width:100%;">
+             <?php
+                } ?>
+                <div class="carousel-caption">
+                  <?php echo $testimonial['content']; ?>
+                </div>
+            </div>
+            <?php
+                $j++;
+                endwhile;
+                endif;
+                wp_reset_postdata();
+            ?>
+            </div>
+
+            
+      
+          </div>
+                           </div>
+                       </div>
                    </div>
                </div>
            </div>

@@ -135,3 +135,63 @@ class themeslug_walker_nav_menu extends Walker_Nav_Menu {
 	    $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 }
+
+//Testimonials
+function custom_post_type() {
+	 
+	// Set UI labels for Custom Post Type
+	    $labels = array(
+	        'name'                => _x( 'Testimonials', 'Post Type General Name', 'perchisa' ),
+	        'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'perchisa' ),
+	        'menu_name'           => __( 'Testimonial', 'konkura' ),
+	        'parent_item_colon'   => __( 'Parent Testimonial', 'konkura' ),
+	        'all_items'           => __( 'All Testimonials', 'konkura' ),
+	        'view_item'           => __( 'View Testimonial', 'konkura' ),
+	        'add_new_item'        => __( 'Add New Testimonial', 'konkura' ),
+	        'add_new'             => __( 'Add New', 'konkura' ),
+	        'edit_item'           => __( 'Edit Testimonial', 'konkura' ),
+	        'update_item'         => __( 'Update Testimonial', 'konkura' ),
+	        'search_items'        => __( 'Search Testimonial', 'konkura' ),
+	        'not_found'           => __( 'Not Found', 'konkura' ),
+	        'not_found_in_trash'  => __( 'Not found in Trash', 'konkura' ),
+	    );
+	     
+	// Set other options for Custom Post Type
+	     
+	    $args = array(
+	        'label'               => __( 'testimonial', 'konkura' ),
+	        'description'         => __( 'Testimonial description', 'konkura' ),
+	        'labels'              => $labels,
+	        // Features this CPT supports in Post Editor
+	        'supports'            => array( 'title', 'editor', 'excerpt', 'author' ),
+	        // You can associate this CPT with a taxonomy or custom taxonomy.
+	        'taxonomies'          => array( 'testimonials' ),
+	        /* A hierarchical CPT is like Pages and can have
+	        * Parent and child items. A non-hierarchical CPT
+	        * is like Posts.
+	        */ 
+	        'hierarchical'        => false,
+	        'public'              => true,
+	        'show_ui'             => true,
+	        'show_in_menu'        => true,
+	        'show_in_nav_menus'   => true,
+	        'show_in_admin_bar'   => true,
+	        'menu_position'       => 6,
+	        'can_export'          => true,
+	        'has_archive'         => true,
+	        'exclude_from_search' => false,
+	        'publicly_queryable'  => true,
+	        'capability_type'     => 'page',
+	    );
+	     
+	    // Registering your Custom Post Type
+	    register_post_type( 'testimonial', $args );
+	 
+	}
+	 
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not
+	* unnecessarily executed.
+	*/
+	 
+	add_action( 'init', 'custom_post_type', 0 );

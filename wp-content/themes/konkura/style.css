@@ -239,6 +239,34 @@ Text Domain: Mixen Communication & Web Technology
     list-style: none;
 }
 
+
+.bg-white .events {
+    background-color: #2398d2;
+    color: #fff;
+    border: 1px solid #2398d2;
+}
+
+.events h4, .events p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.events .description {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.events p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .big {
     font-size: 25px !important;
     font-weight: 400 !important;
@@ -454,6 +482,9 @@ Text Domain: Mixen Communication & Web Technology
 
 .carousel-caption {
     z-index: 10;
+    font: 300 14px / 32px Open Sans;
+    color: #353535;
+    text-align: center;
 }
 
 
@@ -467,13 +498,13 @@ Text Domain: Mixen Communication & Web Technology
     height: 100%;
 }
 
-.carousel-caption, .cycloneslider-caption {
+.cycloneslider-caption {
     bottom: 30% !important;
     background: none !important;
     text-align: center !important;
 }
 
-.carousel-caption h1, .cycloneslider-caption-title {
+.cycloneslider-caption-title {
     width: 474px;
     font-weight: 700;
     font-size: 36px !important;
@@ -483,7 +514,7 @@ Text Domain: Mixen Communication & Web Technology
     border-bottom: 2px solid #fff;
 }
 
-.carousel-caption p, .cycloneslider-caption-description {
+.cycloneslider-caption-description {
     width: 594px;
     font-weight: 400;
     line-height: 39.66px;
@@ -497,15 +528,31 @@ Text Domain: Mixen Communication & Web Technology
     right: 50% !important;
 }
 
-.carousel-indicators li, .cycloneslider-pager span {
+.cycloneslider-pager span {
     background-color: rgba(245, 136, 30, 0.4) !important;
 }
 
-.carousel-indicators li.active, span.cycle-pager-active {
+.carousel-indicators {
+    bottom: -20px;
+}
+
+.carousel-indicators li {
     background-color: #fff !important;
 }
 
-.carousel-indicators li, .carousel-indicators li.active, , .cycle-pager-active {
+.carousel-indicators li.active {
+    background-color: rgba(245, 136, 30, 0.4) !important;
+}
+
+span.cycle-pager-active {
+    background-color: #fff !important;
+}
+
+.carousel-indicators li {
+    border: 1px solid rgba(245, 136, 30, 0.8);
+}
+
+.carousel-indicators li.active, , .cycle-pager-active {
      border: 1px solid rgba(245, 136, 30, 0.4) !important;
 }
 
@@ -817,15 +864,15 @@ body {
     background-color: #fff;
 }
 
-.carousel-caption, .cycloneslider-caption {
+.cycloneslider-caption {
     bottom: 50% !important;
 }      
     
-.carousel-caption h1, .cycloneslider-caption-title {
+.cycloneslider-caption-title {
     font-size: 12px !important;
 }
     
-.carousel-caption p, .cycloneslider-caption-description {
+.cycloneslider-caption-description {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -836,7 +883,7 @@ body {
     width: 60%;
 }
     
-.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3, .bg-yellow h2.center, .bg-white .metodology h2 {
+.carousel-caption h1, .carousel-caption p, .heading, .bg-white .content address, .bg-white .socials .social-heading, .bg-white h3, .bg-yellow h2.center, .bg-white .metodology h2, .btn-full {
     width: 100%;
 }
 
@@ -887,11 +934,11 @@ body {
     margin: 0;
 }
 
-.carousel-caption, .cycloneslider-caption {
+.cycloneslider-caption {
     bottom: 20% !important;
 }    
     
-.cycloneslider-caption-title, .cycloneslider-caption-description, .carousel-caption h1, .carousel-caption p {
+.cycloneslider-caption-title, .cycloneslider-caption-description {
     width: 60% !important;
 }    
     
@@ -922,7 +969,7 @@ body {
     margin: 0 5px;
 }
 
-.carousel-caption, .cycloneslider-caption {
+.cycloneslider-caption {
     bottom: 30% !important;
 }
     
