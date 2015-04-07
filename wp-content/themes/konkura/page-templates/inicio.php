@@ -98,7 +98,7 @@
                                <p>Hora: <?php echo CFS()->get('hora_curso'); ?></p>
                                <p>Lugar: <?php echo CFS()->get('lugar_curso'); ?></p>
                                
-                               <a href="#" class="btn btn-white btn-full margin-top margin-bottom">Descargar</a>
+                               <a href="<?php echo CFS()->get('link_descarga'); ?>" class="btn btn-white btn-full margin-top margin-bottom">Descargar</a>
                            </div>
                            <div class="col-sm-2"></div>
                        </div>
@@ -165,10 +165,10 @@
                 }
                 
                 if($j == 0) { ?>
-                    <div class="item active" style="height:250px; width:100%;">
+                    <div class="item active">
              <?php
                 }else { ?>
-                    <div class="item" style="height:250px; width:100%;">
+                    <div class="item">
              <?php
                 } ?>
                 <div class="carousel-caption">

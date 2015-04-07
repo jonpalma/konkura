@@ -131,13 +131,32 @@ Text Domain: Mixen Communication & Web Technology
     padding-left: 50px;
 }
 
-.bg-white .content-cursos ul li::before {
+.bg-white .content-cursos ul li::before, .bg-white .content-empresarial ul li::before {
     content: '- ';
 }
 
-.bg-white .content-cursos ul li {
+.bg-white .content-cursos ul li, .bg-white .content-empresarial ul li {
     list-style: none;
     margin-left: -30px;
+}
+
+.bg-white .content-empresarial ul li {
+    font-size: 12px;
+    color: #000;
+}
+
+.bg-white .content-empresarial {
+    background-color: #f2f2f2;
+    padding: 10px 15px 0;
+}
+
+.bg-white .content-empresarial h4 {
+    color: #5d5d5f;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 32.007px;
+    text-transform: uppercase;
 }
 
 .bg-white h3 {
@@ -485,11 +504,13 @@ Text Domain: Mixen Communication & Web Technology
     font: 300 14px / 32px Open Sans;
     color: #353535;
     text-align: center;
+    bottom: 0;
 }
 
 
 .carousel .item {
     min-width: 100%;
+    height: 200px;
     background-color: #fff;
 }
 
@@ -684,6 +705,36 @@ span.cycle-pager-active {
 .yellow-bottom {
     stroke: #ffad00;
     fill: #ffad00;
+    stroke-width: 1px;
+}
+
+.orange-bottom {
+    stroke: #f67b26;
+    fill: #f67b26;
+    stroke-width: 1px;
+}
+
+.light-gray-bottom {
+    stroke: #b7b7b4;
+    fill: #b7b7b4;
+    stroke-width: 1px;
+}
+
+.teal-bottom {
+    stroke: #b9ddd7;
+    fill: #b9ddd7;
+    stroke-width: 1px;
+}
+
+.green-bottom {
+    stroke: #40b8a8;
+    fill: #40b8a8;
+    stroke-width: 1px;
+}
+
+.gray-bottom {
+    stroke: #686868;
+    fill: #686868;
     stroke-width: 1px;
 }
 

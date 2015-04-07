@@ -7,6 +7,7 @@ register_nav_menus( array(
 //Filters
 add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
+remove_filter ('the_content', 'wpautop');
 
 function posts_link_attributes_next() {
     return 'class="btn btn-yellow pag-right margin-bottom"';
@@ -141,8 +142,8 @@ function custom_post_type() {
 	 
 	// Set UI labels for Custom Post Type
 	    $labels = array(
-	        'name'                => _x( 'Testimonials', 'Post Type General Name', 'perchisa' ),
-	        'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'perchisa' ),
+	        'name'                => _x( 'Testimonials', 'Post Type General Name', 'konkura' ),
+	        'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'konkura' ),
 	        'menu_name'           => __( 'Testimonial', 'konkura' ),
 	        'parent_item_colon'   => __( 'Parent Testimonial', 'konkura' ),
 	        'all_items'           => __( 'All Testimonials', 'konkura' ),
