@@ -196,3 +196,59 @@ function custom_post_type() {
 	*/
 	 
 	add_action( 'init', 'custom_post_type', 0 );
+
+//Courses
+function custom_post_courses() {
+  $labels = array(
+    'name'               => _x( 'Courses', 'post type general name', 'konkura' ),
+    'singular_name'      => _x( 'Course', 'post type singular name', 'konkura' ),
+    'add_new'            => _x( 'Add New', 'konkura' ),
+    'add_new_item'       => __( 'Add New Course', 'konkura' ),
+    'edit_item'          => __( 'Edit Course', 'konkura' ),
+    'new_item'           => __( 'New Course', 'konkura' ),
+    'all_items'          => __( 'All Courses', 'konkura' ),
+    'view_item'          => __( 'View Course', 'konkura' ),
+    'search_items'       => __( 'Search Courses', 'konkura' ),
+    'not_found'          => __( 'No courses found', 'konkura' ),
+    'not_found_in_trash' => __( 'No courses found in the Trash', 'konkura' ), 
+    'parent_item_colon'  => __('Parent Course', 'konkura'),
+    'menu_name'          => __('Courses', 'konkura')
+  );
+  $args = array(
+    'labels'        => $labels,
+    'description'   => __('Course description', 'konkura'),
+    'public'        => true,
+    'show_ui'             => true,
+	'show_in_menu'        => true,
+	'show_in_nav_menus'   => true,
+	'show_in_admin_bar'   => true,  
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+    'has_archive'   => true,
+  );
+  register_post_type( 'course', $args ); 
+}
+add_action( 'init', 'custom_post_courses' );
+
+//Taxonomies for courses
+function taxonomies_courses() {
+  $labels = array(
+    'name'              => _x( 'Courses Categories', 'taxonomy general name', 'konkura' ),
+    'singular_name'     => _x( 'Course Category', 'taxonomy singular name', 'konkura' ),
+    'search_items'      => __( 'Search Course Categories', 'konkura' ),
+    'all_items'         => __( 'All Course Categories', 'konkura' ),
+    'parent_item'       => __( 'Parent Course Category', 'konkura' ),
+    'parent_item_colon' => __( 'Parent Course Category:', 'konkura' ),
+    'edit_item'         => __( 'Edit Course Category', 'konkura' ), 
+    'update_item'       => __( 'Update Course Category', 'konkura' ),
+    'add_new_item'      => __( 'Add New Course Category', 'konkura' ),
+    'new_item_name'     => __( 'New Course Category', 'konkura' ),
+    'menu_name'         => __( 'Course Categories', 'konkura' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'course_category', array('course'), $args );
+}
+add_action( 'init', 'taxonomies_courses', 0 );

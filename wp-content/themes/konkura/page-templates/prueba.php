@@ -33,21 +33,8 @@
                 <div class="col-sm-4">
                       <img src="<?php bloginfo('template_url')?>/img/negocio.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                           <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'negocio'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
-                           <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                            ?>
-                            </ul>
+                            <h4><?php echo CFS()->get('area1'); ?></h4>
+                            <?php echo CFS()->get('contenido_area1'); ?>
                             <svg version="1.1" class="orange-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
                         <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
@@ -59,21 +46,8 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                        <img src="<?php bloginfo('template_url')?>/img/personal.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                         <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'personal'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
-                           <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                            ?>
-                            </ul>
+                            <h4><?php echo CFS()->get('area2'); ?></h4>
+                            <?php echo CFS()->get('contenido_area2'); ?>
                             <svg version="1.1" class="light-gray-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
                         <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
@@ -85,21 +59,8 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                       <img src="<?php bloginfo('template_url')?>/img/organizacion.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'organizacion'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
-                           <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                            ?>
-                            </ul>
+                            <h4><?php echo CFS()->get('area3'); ?></h4>
+                            <?php echo CFS()->get('contenido_area3'); ?>
                             <svg version="1.1" class="teal-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
                         <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
@@ -114,21 +75,8 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                     <img src="<?php bloginfo('template_url')?>/img/gestion.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'gestion'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
-                           <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                            ?>
-                            </ul>
+                            <h4><?php echo CFS()->get('area4'); ?></h4>
+                            <?php echo CFS()->get('contenido_area4'); ?>
                             <svg version="1.1" class="green-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
                         <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
@@ -140,21 +88,8 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                     <img src="<?php bloginfo('template_url')?>/img/clientes.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'clientes'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
-                           <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                            ?>
-                            </ul>
+                            <h4><?php echo CFS()->get('area5'); ?></h4>
+                            <?php echo CFS()->get('contenido_area5'); ?>
                             <svg version="1.1" class="gray-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
                         <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
