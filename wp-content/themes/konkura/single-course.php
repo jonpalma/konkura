@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="heading center-block">
-                    <h1>Noticia</h1>
+                    <h1>Probando</h1>
                     <svg version="1.1" class="heading-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
 <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>

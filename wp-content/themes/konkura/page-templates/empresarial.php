@@ -21,6 +21,16 @@
     </div>
     <!-- END HEADING -->
     <!-- BEGIN CONTENT -->
+    <?php 
+        $taxonomy = 'course_category';
+        $term = term_exists('empresarial', $taxonomy);
+        $term_id = 0;
+        $term_children = null;
+        if ($term !== 0 && $term !== null) {
+            $term_id = $term->term_id;
+            $term_children = get_term_children($term_id, $taxonomy);
+        } 
+    ?>
     <div class="jumbotron bg-white">
         <div class="container content">
             <div class="row margin-bottom">
@@ -33,12 +43,14 @@
                 <div class="col-sm-4">
                       <img src="<?php bloginfo('template_url')?>/img/negocio.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                           <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'negocio'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
+                           <?php 
+                                    if(term_exists('negocio', $taxonomy)) {
+                                        $cat = get_term_by('slug', 'negocio', $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                           ?>
+                           <h4><?php echo $cat->name; ?></h4>
                            <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                   <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
                             </li>
@@ -46,6 +58,7 @@ print_r($terms[0]->name); ?></h4>
                                 endwhile;
                                 endif;
                                 wp_reset_postdata();
+                                }
                             ?>
                             </ul>
                             <svg version="1.1" class="orange-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -59,12 +72,14 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                        <img src="<?php bloginfo('template_url')?>/img/personal.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                         <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'personal'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
+                            <?php 
+                                    if(term_exists('personal', $taxonomy)) {
+                                        $cat = get_term_by('slug', 'personal', $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                           ?>
+                           <h4><?php echo $cat->name; ?></h4>
                            <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                   <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
                             </li>
@@ -72,6 +87,7 @@ print_r($terms[0]->name); ?></h4>
                                 endwhile;
                                 endif;
                                 wp_reset_postdata();
+                                }
                             ?>
                             </ul>
                             <svg version="1.1" class="light-gray-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -85,12 +101,14 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                       <img src="<?php bloginfo('template_url')?>/img/organizacion.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'organizacion'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
+                            <?php 
+                                    if(term_exists('organizacion', $taxonomy)) {
+                                        $cat = get_term_by('slug', 'organizacion', $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                           ?>
+                           <h4><?php echo $cat->name; ?></h4>
                            <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                   <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
                             </li>
@@ -98,6 +116,7 @@ print_r($terms[0]->name); ?></h4>
                                 endwhile;
                                 endif;
                                 wp_reset_postdata();
+                                }
                             ?>
                             </ul>
                             <svg version="1.1" class="teal-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -114,12 +133,14 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                     <img src="<?php bloginfo('template_url')?>/img/gestion.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'gestion'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
+                            <?php 
+                                    if(term_exists('gestion', $taxonomy)) {
+                                        $cat = get_term_by('slug', 'gestion', $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                           ?>
+                           <h4><?php echo $cat->name; ?></h4>
                            <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                   <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
                             </li>
@@ -127,6 +148,7 @@ print_r($terms[0]->name); ?></h4>
                                 endwhile;
                                 endif;
                                 wp_reset_postdata();
+                                }
                             ?>
                             </ul>
                             <svg version="1.1" class="green-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -140,12 +162,14 @@ print_r($terms[0]->name); ?></h4>
                 <div class="col-sm-4">
                     <img src="<?php bloginfo('template_url')?>/img/clientes.jpg" alt="Konkura Consultores" class="img-responsive center-block margin-bottom">
                        <div class="content-empresarial">
-                            <?php $loop = new WP_Query(array( 'post_type' => 'course', 'course_category' => 'clientes'));
-                           if($loop->have_posts()): ?>
-                           <h4><?php $terms = wp_get_object_terms( $loop->post->ID,  'course_category' );
-print_r($terms[0]->name); ?></h4>
+                            <?php 
+                                    if(term_exists('clientes', $taxonomy)) {
+                                        $cat = get_term_by('slug', 'clientes', $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                           ?>
+                           <h4><?php echo $cat->name; ?></h4>
                            <ul>
-                   <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                   <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
                             </li>
@@ -153,6 +177,7 @@ print_r($terms[0]->name); ?></h4>
                                 endwhile;
                                 endif;
                                 wp_reset_postdata();
+                                }
                             ?>
                             </ul>
                             <svg version="1.1" class="gray-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

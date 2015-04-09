@@ -7,7 +7,6 @@ register_nav_menus( array(
 //Filters
 add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
-remove_filter ('the_content', 'wpautop');
 
 function posts_link_attributes_next() {
     return 'class="btn btn-yellow pag-right margin-bottom"';

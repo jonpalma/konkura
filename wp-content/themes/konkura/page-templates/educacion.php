@@ -21,6 +21,9 @@
     </div>
     <!-- END HEADING -->
     <!-- BEGIN CONTENT -->
+    <?php 
+        $taxonomy = 'course_category';
+    ?>
     <div class="jumbotron bg-white">
         <div class="container content">
             <div class="row margin-bottom">
@@ -31,79 +34,163 @@
                     <hr />
                 </div>
                 <div class="col-sm-4">
-                      <div class="row head-blue">
+                      <div class="head-blue">
+                         <?php
+                            if(term_exists('academica', $taxonomy)) {
+                                $academica = get_term_by('slug', 'academica', $taxonomy);
+                          ?>
                           <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
                                   <polygon points="0.641,0 89.141,0 44.891,38 "/>
                             </svg>
-                          <h2><?php echo CFS()->get('academica'); ?></h2>
+                          <h2>Gestión <?php echo $academica->name; ?></h2>
                       </div>
-                          <div class="top-arrow">
+                                <?php
+                                    $term_children = get_term_children(intval($academica->term_id), $taxonomy);
+                                    $i = 0;
+                                    $len = count($term_children);
+                                    foreach($term_children as $child) { ?>
+                        <div class="top-arrow-blue">
                              <div class="content-cursos">
-                                 <h4><?php echo CFS()->get('academica1'); ?></h4>
-                                 <?php echo CFS()->get('academica1_texto'); ?>
+                                <?php
+                                        $term = get_term_by( 'id', $child, $taxonomy );
+                                        $i++;                    
+                                 $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $term->slug));
+                           ?>
+                               <h4><?php echo $term->name; ?></h4>
+                               <ul>
+                       <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                </li>
+                                <?php
+                                        endwhile;
+                                        endif;
+                                        wp_reset_postdata();
+                                        ?>
+                                </ul>
+                                <?php
+                                        if($i == $len) {
+                                        ?>
+                                            <svg version="1.1" class="blue-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
+                                            <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                                            <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                                            <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                                        </svg>
+                                        <?php } ?>
                              </div>
                           </div>
-                              <div class="top-arrow">
-                                <div class="content-cursos">
-                                    <h4><?php echo CFS()->get('academica2'); ?></h4>
-                                    <?php echo CFS()->get('academica2_texto'); ?>
-                                </div> 
-                             </div>
-                              <div class="top-arrow">
-                                <div class="content-cursos">
-                                    <h4><?php echo CFS()->get('academica3'); ?></h4>
-                                    <?php echo CFS()->get('academica3_texto'); ?>
-                                    <svg version="1.1" class="teal-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                                    </svg>
-                              </div>
-                             </div>
+                              <?php
+                                        }  
+                                } 
+                            ?>
                 </div>
                 <div class="col-sm-4">
-                       <div class="row head-blue">
+                       <div class="head-green">
+                         <?php
+                            if(term_exists('institucional', $taxonomy)) {
+                                $institucional = get_term_by('slug', 'institucional', $taxonomy);
+                          ?>
                           <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
                                   <polygon points="0.641,0 89.141,0 44.891,38 "/>
                             </svg>
-                          <h2><?php echo CFS()->get('institucional'); ?></h2>
+                          <h2>Gestión <?php echo $institucional->name; ?></h2>
                       </div>
-                          <div class="content-cursos">
-                             <div class="top-arrow">
-                                 <h4><?php echo CFS()->get('insitucional1'); ?></h4>
-                             </div>
-                              <?php echo CFS()->get('institucional1_texto'); ?>
-                              <svg version="1.1" class="teal-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <?php
+                                    $term_children = get_term_children(intval($institucional->term_id), $taxonomy);
+                                    $i = 0;
+                                    $len = count($term_children);
+                                    foreach($term_children as $child) { ?>
+                        <div class="top-arrow-green">
+                             <div class="content-cursos">
+                                <?php
+                                        $term = get_term_by( 'id', $child, $taxonomy );
+                                        $i++;                    
+                                 $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $term->slug));
+                           ?>
+                               <h4><?php echo $term->name; ?></h4>
+                               <ul>
+                       <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                </li>
+                                <?php
+                                        endwhile;
+                                        endif;
+                                        wp_reset_postdata();
+                                        ?>
+                                </ul>
+                                <?php
+                                        if($i == $len) {
+                                        ?>
+                                            <svg version="1.1" class="lime-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                    </svg>
+                                            <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                                            <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                                            <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                                        </svg>
+                                        <?php } ?>
+                             </div>
                           </div>
+                              <?php
+                                        }  
+                                } 
+                            ?>
                 </div>
                 <div class="col-sm-4">
-                      <div class="row head-blue">
+                      <div class="head-yellow">
+                         <?php
+                            if(term_exists('escolar', $taxonomy)) {
+                                $escolar = get_term_by('slug', 'escolar', $taxonomy);
+                          ?>
                           <svg version="1.1" class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 90.012 38" preserveAspectRatio="none">
                                   <polygon points="0.641,0 89.141,0 44.891,38 "/>
                             </svg>
-                          <h2><?php echo CFS()->get('institucional'); ?></h2>
+                          <h2>Gestión <?php echo $escolar->name; ?></h2>
                       </div>
-                          <div class="content-cursos">
-                             <div class="top-arrow">
-                                 <h4><?php echo CFS()->get('insitucional1'); ?></h4>
-                             </div>
-                              <?php echo CFS()->get('institucional1_texto'); ?>
-                              <svg version="1.1" class="teal-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <?php
+                                    $term_children = get_term_children(intval($escolar->term_id), $taxonomy);
+                                    $i = 0;
+                                    $len = count($term_children);
+                                    foreach($term_children as $child) { ?>
+                        <div class="top-arrow">
+                             <div class="content-cursos">
+                                <?php
+                                        $term = get_term_by( 'id', $child, $taxonomy );
+                                        $i++;                    
+                                 $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $term->slug));
+                           ?>
+                               <h4><?php echo $term->name; ?></h4>
+                               <ul>
+                       <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                </li>
+                                <?php
+                                        endwhile;
+                                        endif;
+                                        wp_reset_postdata();
+                                        ?>
+                                </ul>
+                                <?php
+                                        if($i == $len) {
+                                        ?>
+                                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                    </svg>
+                                            <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
+                                            <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
+                                            <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
+                                        </svg>
+                                        <?php } ?>
+                             </div>
                           </div>
+                              <?php
+                                        }  
+                                } 
+                            ?>
                 </div>
             </div>
         </div>
