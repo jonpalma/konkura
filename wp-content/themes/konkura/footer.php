@@ -26,6 +26,8 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="<?php bloginfo('template_url')?>/js/googleMapInit.js"></script>
     <script src="<?php bloginfo('template_url')?>/js/smoothscroll.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/classie.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/overlay.js"></script>
     <script type="text/javascript">
             $(document).ready(function(){
                 $("#myCarousel").carousel();
@@ -36,6 +38,11 @@
                 }, function() {
                     $('.second', this).hide();
                     $('.init', this).show();
+                });
+                $("a.overlay-ajax").click(function(){
+                    var url = $(this).attr("href");
+                    $(".overlay-section").load(url + ' #transmitter');
+                    return false;
                 });
             });
     </script>

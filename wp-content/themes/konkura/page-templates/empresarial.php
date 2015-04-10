@@ -3,6 +3,16 @@
 /* Template Name: Empresarial */
     get_header(); 
 ?>
+<!-- BEGIN/MODAL SECTION -->
+        <div class="container overlay overlay-slidedown">
+            <div class="row">
+                <div class="overlay-section"></div>
+                <div class="col-md-12 ">
+                    <button class="overlay-close btn-gray center-block margin-bottom">Regresar</button>
+                </div>
+            </div>
+        </div><!-- the overlay element -->
+<!-- END/MODAL SECTION -->
 <!-- BEGIN HEADING -->
     <div class="container-fluid bg-yellow heading-title">
         <div class="row">
@@ -52,7 +62,7 @@
                            <ul>
                    <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
                             </li>
                             <?php
                                 endwhile;
@@ -110,7 +120,7 @@
                            <ul>
                    <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
                             </li>
                             <?php
                                 endwhile;
@@ -142,7 +152,7 @@
                            <ul>
                    <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
                             </li>
                             <?php
                                 endwhile;
@@ -171,7 +181,7 @@
                            <ul>
                    <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
                             </li>
                             <?php
                                 endwhile;

@@ -1,56 +1,113 @@
-<?php get_header(); ?>
-<!-- BEGIN HEADING -->
-    <div class="container-fluid bg-yellow heading-title">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="heading center-block">
-                    <h1>Probando</h1>
-                    <svg version="1.1" class="heading-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-<polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-<line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-<line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-</svg>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- END HEADING -->
-<!-- BEGIN CONTENT -->
-<div class="jumbotron bg-white">
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-             <div class="col-sm-12 blog-section">
-                 <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                 <a href="<?php the_permalink();?>"><?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_articles_thumbs', array( 'class' => 'img-responsive' ) ); }?></a>
-                 <?php the_content();?>
-             </div>
+<!DOCTYPE html>
+<html lang="en">
 
-          <?php endwhile; else: ?>
-          <h1>No se encontraron articulos</h1>
-          <?php endif; ?>
-              <div class="col-sm-12 margin-top">
-                <div class="col-sm-6 margin-bottom">
-                    <?php $prev_post = get_previous_post();
-                                        if (!empty( $prev_post )): ?>
-                                          <a class="btn btn-yellow pag-left margin-bottom" href="<?php echo get_permalink( $prev_post->ID ); ?>">&lt; Anterior</a>
-                    <?php endif; ?>
+<head>
+    <title><? the_title(); ?></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Agencia Mixen"/>
+</head>
+<body>
+    <div id="transmitter">
+        <section id="singlePageContent" class="white">
+            <div class="container single-course">
+                <!--content-->
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <div class="row bg-gray">
+                    <div class="col-sm-12">
+                        <div class="col-sm-2">
+                            <a href="#" class="overlay-close center-block"><img src="<?php bloginfo('template_url')?>/img/return.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="col-sm-10">
+                            <h2><? the_title(); ?></h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <?php $next_post = get_next_post();
-                                        if (!empty( $next_post )): ?>
-                                      <a class="btn btn-yellow pag-right margin-bottom" href="<?php echo get_permalink( $next_post->ID ); ?>">Siguiente &gt;</a>
-                    <?php endif; ?>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="col-sm-12 bg-orange">
+                            <h3>Requisitos</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/requisito1.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10 requisitos">
+                            <span>Dirigido a:</span>
+                            <p><?php echo CFS()->get('dirigido'); ?></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/requisito2.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10 requisitos">
+                            <span>Producto:</span>
+                            <p><?php echo CFS()->get('producto'); ?></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/requisito3.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10 requisitos">
+                            <span>Duración:</span>
+                            <p><?php echo CFS()->get('duracion'); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5">
+                        <div class="col-sm-12 bg-orange">
+                            <h3>Resultado del aprendizaje</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/aprendizaje1.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10">
+                            <p><?php echo CFS()->get('resultado1'); ?></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/aprendizaje2.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10">
+                            <p><?php echo CFS()->get('resultado2'); ?></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/aprendizaje3.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10">
+                            <p><?php echo CFS()->get('resultado3'); ?></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="<?php bloginfo('template_url')?>/img/cursos/aprendizaje4.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-10">
+                            <p><?php echo CFS()->get('resultado4'); ?></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-           </div>
-            <div class="col-sm-4 sidebar">
-                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar')) : endif; ?>
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="col-sm-12 bg-orange">
+                            <h3>Metodología</h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <p><?php echo CFS()->get('metodologia'); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5">
+                        <div class="col-sm-12 bg-orange">
+                            <h3>Contacto</h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <p><?php echo CFS()->get('contacto'); ?></p>
+                        </div>
+                    </div>
+                </div>
+                <!--end content-->
+                <?php endwhile; else: ?>
+                    <h1>No se encontraron articulos</h1>
+                <?php endif; ?>
+            </div><!-- /container -->
+        </section>
+        <!--end section-->
     </div>
-</div>
-<!-- END CONTENT -->
-<?php get_footer(); ?>
+    <script src="js/overlay.js"></script>
+</body>
+</html>

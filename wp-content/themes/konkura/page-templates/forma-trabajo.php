@@ -58,14 +58,14 @@
                 <div class="col-sm-4">
                      <ul class="nav nav-pills nav-stacked metodology-tab" role="tablist">
                         <li role="presentation" class="active">
-                            <a href="#diagnostic" aria-controls="diagnostic" role="tab" data-toggle="tab">
-                            1. <?php echo CFS()->get('paso_1'); ?>
+                            <a id="diagnostic-pill" href="#diagnostic" aria-controls="diagnostic" role="tab" data-toggle="tab">
+                                1. <?php echo CFS()->get('paso_1'); ?>
                             </a>
                         </li>
-                        <li role="presentation"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">2. <?php echo CFS()->get('paso_2'); ?></a></li>
-                        <li role="presentation"><a href="#implement" aria-controls="implement" role="tab" data-toggle="tab">3. <?php echo CFS()->get('paso_3'); ?></a></li>
-                        <li role="presentation"><a href="#measure" aria-controls="measure" role="tab" data-toggle="tab">4. <?php echo CFS()->get('paso_4'); ?></a></li>
-                        <li role="presentation"><a href="#results" aria-controls="results" role="tab" data-toggle="tab">5. <?php echo CFS()->get('paso_5'); ?></a></li>
+                        <li role="presentation"><a id="design-pill" href="#design" aria-controls="design" role="tab" data-toggle="tab">2. <?php echo CFS()->get('paso_2'); ?></a></li>
+                        <li role="presentation"><a id="implement-pill" href="#implement" aria-controls="implement" role="tab" data-toggle="tab">3. <?php echo CFS()->get('paso_3'); ?></a></li>
+                        <li role="presentation"><a id="measure-pill" href="#measure" aria-controls="measure" role="tab" data-toggle="tab">4. <?php echo CFS()->get('paso_4'); ?></a></li>
+                        <li role="presentation"><a id="results-pill" href="#results" aria-controls="results" role="tab" data-toggle="tab">5. <?php echo CFS()->get('paso_5'); ?></a></li>
                      </ul>
                 </div>
                 <div class="col-sm-8">

@@ -20,37 +20,53 @@
               <div class="container distinction">
                    <div class="row">
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/1.png" alt="" class="center-block">
+                          </div>
                            <h5>Escuchamos a nuestros clientes</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsvie img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/2.png" alt="" class="center-block">
+                          </div>
                            <h5>Diseñamos estrategias funcionales</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/3.png" alt="" class="center-block">
+                          </div>
                            <h5>Orientamos nuestros procesos a generar resultados</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/4.png" alt="" class="center-block">
+                          </div>
                            <h5>Hacemos las cosas simples</h5>
                        </div>
                    </div>
                    <div class="row">
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/5.png" alt="" class="center-block">
+                          </div>
                            <h5>Desarrollamos lenguaje significativo</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/6.png" alt="" class="center-block">
+                          </div>
                            <h5>Capacitamos de una forma práctica y competitiva</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/7.png" alt="" class="center-block">
+                          </div>
                            <h5>Generamos ambientes propicios para el aprendizaje</h5>
                        </div>
                        <div class="col-sm-3">
-                           <img src="<?php bloginfo('template_url')?>/img/cuadro_azul.jpg" alt="" class="img-responsive img-circle center-block">
+                          <div class="icon img-responsive img-circle center-block">
+                              <img src="<?php bloginfo('template_url')?>/img/8.png" alt="" class="center-block">
+                          </div>
                            <h5>Medimos todo lo que hacemos</h5>
                        </div>
                    </div>
