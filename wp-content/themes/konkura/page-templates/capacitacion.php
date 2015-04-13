@@ -3,6 +3,16 @@
 /* Template Name: Capacitación */
     get_header(); 
 ?>
+<!-- BEGIN/MODAL SECTION -->
+        <div class="container overlay overlay-slidedown">
+            <div class="row">
+                <div class="overlay-section"></div>
+                <div class="col-md-12 ">
+                    <button class="overlay-close btn-gray center-block margin-bottom">Regresar</button>
+                </div>
+            </div>
+        </div><!-- the overlay element -->
+<!-- END/MODAL SECTION -->
 <!-- BEGIN HEADING -->
     <div class="container-fluid bg-yellow heading-title">
         <div class="row">
@@ -21,24 +31,40 @@
     </div>
 <!-- END HEADING -->
 <!-- BEGIN CONTENT -->
+   <?php 
+        $taxonomy = 'course_category';
+        $term = term_exists('capacitacion-empresarial', $taxonomy);
+        $term_id = 0;
+        $term_children = null;
+        if ($term !== 0 && $term !== null) {
+            $term_id = $term[term_id];
+            $term_children = get_term_children($term_id, $taxonomy);
+        } 
+    ?>
     <div class="jumbotron bg-white">
         <div class="container content">
             <div class="row">
                 <h2>Cursos y talleres por áreas de especialidad</h2>
                 <hr />
-                <div class="col-sm-3">
+                <?php 
+                        foreach($term_children as $child) {
+                                        $cat = get_term_by('id', $child, $taxonomy);
+                                    $loop = new WP_Query(array( 'post_type' => 'course', $taxonomy => $cat->slug));
+                ?>
+                <div class="col-sm-3 margin-bottom">
                    <div class="top-arrow">
                        <div class="content-cursos">
-                            <h4>Desarrollo de habilidades</h4>
+                            <h4><?php echo $cat->name; ?></h4>
                             <ul>
-                                <li>Negociación y Manejo de conflictos</li>
-                                <li>Formación de Instructores</li>
-                                <li>Imagen Personal</li>
-                                <li>Creatividad e Innovación</li>
-                                <li>Planeación estratégica</li>
-                                <li>Orientación a Resultados</li>
-                                <li>Trabajo en Equipo</li>
-                                <li>Juntas Efectivas</li>
+                            <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                            <li>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
+                            </li>
+                            <?php 
+                                endwhile;
+                                endif;
+                                wp_reset_postdata();
+                            ?>
                             </ul>
                             <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
@@ -49,66 +75,9 @@
                         </div>
                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="top-arrow">
-                        <div class="content-cursos">
-                            <h4>Liderazgo y Coaching</h4>
-                            <ul>
-                                <li>Desarrollo de Habilidades Gerenciales</li>
-                                <li>Equipo de Alto Desempeño</li>
-                                <li>Coaching Personal y de Equipos</li>
-                                <li>Gestión Efectiva de Equipos</li>
-                                <li>Liderazgo Situacional</li>
-                                <li>Liderazgo Transformacional</li>
-                            </ul>
-                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                    </svg>
-                        </div>   
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                   <div class="top-arrow">
-                       <div class="content-cursos">
-                            <h4>Desarrollo personal</h4>
-                            <ul>
-                                <li>Administración del Tiempo</li>
-                                <li>Comunicación</li>
-                                <li>Presentaciones de Alto Impacto</li>
-                                <li>Manejo y Gestión del Cambio</li>
-                            </ul>
-                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                    </svg>
-                        </div>
-                   </div> 
-                </div>
-                <div class="col-sm-3">
-                   <div class="top-arrow">
-                       <div class="content-cursos">
-                            <h4>Recursos humanos</h4>
-                            <ul>
-                                <li>Cómo hacer un DNC efectivo</li>
-                                <li>Diseño de Programas de Capacitación</li>
-                                <li>Diseño de Contenidos de Capacitación</li>
-                                <li>Capacitación por Competencias</li>
-                                <li>Reclutamiento y Selección</li>
-                            </ul>
-                            <svg version="1.1" class="yellow-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="100%" height="auto" viewBox="0 0 200 70" preserveAspectRatio="none">
-                        <polygon points="90.661,29.56 110.204,29.56 100.433,40.941 "/>
-                        <line stroke-miterlimit="10" x1="1.593" y1="34.013" x2="80.269" y2="34.013"/>
-                        <line stroke-miterlimit="10" x1="119.729" y1="34.013" x2="198.406" y2="34.013"/>
-                    </svg>
-                        </div>
-                   </div> 
-                </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -124,7 +93,9 @@
             <h2 class="center">Modalidades de capacitación</h2>
             <div class="col-sm-4">
                <div class="col-sm-12">
-                   <img src="<?php bloginfo('template_url')?>/img/presencial.jpg" alt="Presencial" class="img-responsive img-border">
+                  <a href="#top" class="smoothScroll">
+                      <img src="<?php bloginfo('template_url')?>/img/presencial.jpg" alt="Presencial" class="img-responsive img-border">
+                  </a>
                </div>
                <div class="col-sm-12">
                    <h6>Presencial</h6>
@@ -132,7 +103,9 @@
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12">
-                   <img src="<?php bloginfo('template_url')?>/img/b-learning.jpg" alt="B-learning" class="img-responsive img-border">
+                  <a href="http://www.konkura.com.mx/virtual">
+                      <img src="<?php bloginfo('template_url')?>/img/b-learning.jpg" alt="B-learning" class="img-responsive img-border">
+                  </a>
                </div>
                 <div class="col-sm-12">
                    <h6>B-Learning</h6>
@@ -140,7 +113,9 @@
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12">
-                   <img src="<?php bloginfo('template_url')?>/img/e-learning.jpg" alt="E-learning" class="img-responsive img-border">
+                  <a href="http://www.konkura.com.mx/virtual">
+                      <img src="<?php bloginfo('template_url')?>/img/e-learning.jpg" alt="E-learning" class="img-responsive img-border">
+                  </a>
                </div>
                 <div class="col-sm-12">
                    <h6>E-Learning</h6>
@@ -162,8 +137,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/1.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Andragogía</h4>
-                        <p>Enfocamos nuestros procesos a la forma en que los adultos aprenden</p>
+                        <h4><?php echo CFS()->get('valor1_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor1'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -171,8 +146,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/2.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Aprendizaje Significativo</h4>
-                        <p>Aprovechamos las experiencias de las personas para anclar el conocimiento</p>
+                        <h4><?php echo CFS()->get('valor2_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor2'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -180,8 +155,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/3.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Herramientas</h4>
-                        <p>Diseñanmos herramientas prácticas y funcionales</p>
+                        <h4><?php echo CFS()->get('valor3_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor3'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -189,8 +164,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/4.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Medición</h4>
-                        <p>Generamos KPI's que nos permitan medir el impacto de nuestras intervenciones</p>
+                        <h4><?php echo CFS()->get('valor4_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor4'); ?></p>
                     </div>
                 </div>
             </div>
@@ -200,8 +175,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/5.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Instructores</h4>
-                        <p>Son expertos, dinámicos y entusiastas, tiene la capacidad de enfocar los entrenamientos para cualquier tipo de audiencia generando aprendizaje</p>
+                        <h4><?php echo CFS()->get('valor5_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor5'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -209,8 +184,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/6.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Procesos de Capacitación</h4>
-                        <p>Nuestros procesos son prácticos, vivenciales, divertidos y orientados a resultados</p>
+                        <h4><?php echo CFS()->get('valor6_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor6'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -218,8 +193,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/7.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Forma de Trabajo</h4>
-                        <p>Hacemos las cosas SIMPLES, para facilitar el aprendizaje</p>
+                        <h4><?php echo CFS()->get('valor7_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor7'); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -227,8 +202,8 @@
                         <img src="<?php bloginfo('template_url')?>/img/capacitacion/8.png" alt="konkura" class="img-responsive">
                     </div>
                     <div class="col-sm-8">
-                        <h4>Resultados</h4>
-                        <p>Entregamos un reporte con los resultados obtenidos en el proceso de Capacitación y Desarollo</p>
+                        <h4><?php echo CFS()->get('valor8_header'); ?></h4>
+                        <p><?php echo CFS()->get('valor8'); ?></p>
                     </div>
                 </div>
             </div>
