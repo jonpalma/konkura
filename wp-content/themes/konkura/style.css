@@ -388,12 +388,12 @@ Text Domain: Mixen Communication & Web Technology
     display: block;
 }
 
-.bg-gray {
+.bg-gray-course {
     background-color: #4b4a49;
     color: #fff;
 }
 
-.bg-gray h2 {
+.bg-gray-course h2 {
     font: 400 20px / 36px Verdana;
     text-align: center;
 }
@@ -403,18 +403,21 @@ Text Domain: Mixen Communication & Web Technology
     color: #fff;
 }
 
+
 .bg-orange h3 {
     font-size: 18px;
     font-weight: 700;
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .requisitos span {
-    font: 700 16px / 30px Verdana;
+    font: 700 16px / 20px Verdana;
 }
 
 .single-course p {
-    font: 400 14px / 36px Verdana;
+    font: 400 14px / 26px Verdana;
 }
 
 .bg-img-cursos {
@@ -593,6 +596,10 @@ Text Domain: Mixen Communication & Web Technology
     overflow-y: scroll;
 }
 
+#transmitter {
+    padding-top: 100px;
+}
+
 .noscroll {
     overflow: hidden;
 }
@@ -699,7 +706,7 @@ Text Domain: Mixen Communication & Web Technology
 
 /** MODAL **/
 #singlePageContent p, #singlePageContent ul {
-    color: #36567F;
+    color: #272727;
 }
 
 #singlePageContent ul li{
@@ -1125,8 +1132,12 @@ footer {
 }
 
 /** MISC **/
+.spacing .col-sm-2, .spacing .col-sm-10, .spacing .col-sm-12 {
+    margin: 10px 0;
+}
+
 .margin-top {
-  margin-top: 50px;  
+    margin-top: 50px;  
 }
 
 .margin-bottom {
@@ -1246,6 +1257,18 @@ ul > li > a:hover {
     margin: 0 auto;
 }
     
+.bg-orange h3 {
+    font-size: 18px;
+}
+
+.requisitos span {
+    font-size: 14px;
+}
+
+.single-course p {
+    font-size: 12px;
+}
+    
 }
 
 @media (min-width: 768px) {
@@ -1290,7 +1313,19 @@ ul > li > a:hover {
 
 .value-second-row{
     margin-left: 140px !important;
-}    
+}
+
+.bg-orange h3 {
+    font-size: 18px;
+}
+
+.requisitos span {
+    font-size: 14px;
+}
+
+.single-course p {
+    font-size: 12px;
+}
     
 }
 
@@ -1329,6 +1364,18 @@ ul > li > a:hover {
     
 .pag-right {
     float: right !important;
+}
+    
+.bg-orange h3 {
+    font-size: 18px;
+}
+
+.requisitos span {
+    font-size: 16px;
+}
+
+.single-course p {
+    font-size: 14px;
 }
     
 }
