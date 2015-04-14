@@ -12,7 +12,7 @@ function initialize() {
     var map_canvas = document.getElementById('googleMap');
 
     var map_options = {
-        center: new google.maps.LatLng(28.624755,-106.073861),
+        center: new google.maps.LatLng(28.626180, -106.075846),
         zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
@@ -20,7 +20,7 @@ function initialize() {
 
     var map = new google.maps.Map(map_canvas, map_options);
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(28.624755,-106.073861),
+        position: new google.maps.LatLng(28.626180, -106.075846),
         map: map,
         title: 'KONKURA'
     });
