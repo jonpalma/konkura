@@ -596,8 +596,8 @@ Text Domain: Mixen Communication & Web Technology
     overflow-y: scroll;
 }
 
-#transmitter {
-    padding-top: 100px;
+#singlePageContent .container {
+    padding-top: 100px !important;
 }
 
 .noscroll {

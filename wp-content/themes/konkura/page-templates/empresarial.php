@@ -91,7 +91,7 @@
                            <ul>
                    <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
                             <li>
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink();?>" class="overlay-ajax trigger-overlay" data-modal="modal"><?php the_title(); ?></a>
                             </li>
                             <?php
                                 endwhile;
