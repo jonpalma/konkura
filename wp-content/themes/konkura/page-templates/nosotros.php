@@ -84,41 +84,31 @@
                 </div>
                     <div class="col-sm-12">
                            <div class="value value-first-row">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_1_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_1_corto'); ?>" class="init img-responsive center-block">   
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_1_largo'); ?>
                             </p>
                         </div>
                         <div class="value">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_2_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_2_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_2_largo'); ?>
                             </p>
                         </div>
                         <div class="value">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_3_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_3_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_3_largo'); ?>
                             </p>
                         </div>
                         <div class="value">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_4_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_4_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_4_largo'); ?>
                             </p>
                         </div>
                         <div class="value value-last">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_5_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_5_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_5_largo'); ?>
                             </p>
@@ -127,25 +117,19 @@
                     </div>
                     <div class="col-sm-12">
                         <div class="value value-second-row">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_6_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_6_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_6_largo'); ?>
                             </p>
                         </div>
                         <div class="value">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_7_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_7_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_7_largo'); ?>
                             </p>
                         </div>
                         <div class="value">
-                            <p class="init">
-                                <?php echo CFS()->get('filosofia_8_corto'); ?>
-                            </p>
+                            <img src="<?php echo CFS()->get('filosofia_8_corto'); ?>" class="init img-responsive center-block">
                             <p class="second">
                                 <?php echo CFS()->get('filosofia_8_largo'); ?>
                             </p>

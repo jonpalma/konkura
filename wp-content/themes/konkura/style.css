@@ -25,7 +25,7 @@ Text Domain: Mixen Communication & Web Technology
 
 .navbar-nav {
     position: relative;
-    bottom: 15px;
+    top: 25px;
 }
 
 .navbar-nav > li > a, .dropdown-menu > li > a {
@@ -479,9 +479,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .value .init {
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+    padding-top: 60px;
 }
 
 .value .second {
