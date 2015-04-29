@@ -17,12 +17,20 @@
     </div>
 <!-- END HEADING -->
 <!-- BEGIN CONTENT -->
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="jumbotron bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                           <?php the_content(); ?>
 
             <?php endwhile; else: ?>
                      <h1>No se encontraron articulos</h1>
             <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- END CONTENT -->
 <?php get_footer(); ?>

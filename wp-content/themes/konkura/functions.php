@@ -4,6 +4,13 @@ register_nav_menus( array(
 	'menu' => 'Menu superior',
 	));
 
+//WooCommerce Support
+add_action( 'after_setup_theme', 'woocommerce_support' );
+
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 //Filters
 add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
@@ -251,3 +258,35 @@ function taxonomies_courses() {
   register_taxonomy( 'course_category', array('course'), $args );
 }
 add_action( 'init', 'taxonomies_courses', 0 );
+
+//WooCommerce Integration
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+add_action('woocommerce_before_main_content', 'woo_output_content_wrapper', 10);
+add_action('woocommerce_after_main_content', 'woo_output_content_wrapper_end', 10);
+
+remove_action('woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail', 10);
+add_action('woocommerce_before_subcategory_title', 'woo_subcategory_thumbnail', 10);
+
+
+
+
+
+//WooCommerce Functions
+function woo_output_content_wrapper() {
+    echo '<div class="container"><div class="col-sm-12">';
+}
+
+function woo_output_content_wrapper_end() {
+    echo '</div></div>';
+}
+
+function woocommerce_get_product_thumbnail( $size = 'shop_catalog', $placeholder_width = 0, $placeholder_height = 0  ) {
+        global $post;
+ 
+         if ( has_post_thumbnail() ) {
+              return get_the_post_thumbnail( $post->ID, $size, array( 'class' => 'img-responsive center-block' ) );
+          } elseif ( wc_placeholder_img_src() ) {
+              return wc_placeholder_img( $size );
+          }
+      }

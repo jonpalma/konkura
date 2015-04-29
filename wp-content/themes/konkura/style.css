@@ -25,7 +25,7 @@ Text Domain: Mixen Communication & Web Technology
 
 .navbar-nav {
     position: relative;
-    top: 25px;
+    top: 50px;
 }
 
 .navbar-nav > li > a, .dropdown-menu > li > a {
@@ -343,6 +343,7 @@ Text Domain: Mixen Communication & Web Technology
 
 .heading-title{
     height: 202px;
+    margin-top: 113px;
 }
 
 .bg-yellow .nosotros {
@@ -747,6 +748,10 @@ Text Domain: Mixen Communication & Web Technology
 .carousel-inner > .item > img {
     min-width: 100%;
     height: 100%;
+}
+
+#cycloneslider-banner-principal-1{
+    margin-top: 113px;      
 }
 
 .cycloneslider-caption {
@@ -1220,7 +1225,7 @@ ul > li > a:hover {
 .dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
     background-color: #fff;
 }
-
+    
 .cycloneslider-caption {
     bottom: 50% !important;
 }      
