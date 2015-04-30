@@ -1149,6 +1149,63 @@ footer {
     text-decoration: underline;
 }
 
+/** WOOCOMMERCE **/
+.woo-btn {
+    height: 35px;
+}
+
+.product-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.add_to_cart_button {
+    width: 100px !important;
+    padding: 5px !important;
+    margin-top: 10px;
+}
+
+.added_to_cart {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    background-color: #A46497;
+    border: 1px solid #A46497;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.added_to_cart:hover {
+    color: #fff;
+    background-color: #935386;
+    text-decoration: none;
+}
+
+.product-title {
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-title:hover {
+    color: #A8A8A8;
+    text-decoration: none;
+}
+
+.amount {
+    color: #009933;
+    font-weight: 700;
+}
+
+.star-rating {
+    color: #FFAD00;
+    margin-bottom: 10px;
+}
+
+
 /** MISC **/
 .spacing .col-sm-2, .spacing .col-sm-10, .spacing .col-sm-12 {
     margin: 10px 0;

@@ -274,11 +274,11 @@ add_action('woocommerce_before_subcategory_title', 'woo_subcategory_thumbnail', 
 
 //WooCommerce Functions
 function woo_output_content_wrapper() {
-    echo '<div class="container"><div class="col-sm-12">';
+    echo '<div class="container woocomerce"><div class="col-sm-12">';
 }
 
 function woo_output_content_wrapper_end() {
-    echo '</div></div>';
+    echo '</div></div></div>';
 }
 
 function woocommerce_get_product_thumbnail( $size = 'shop_catalog', $placeholder_width = 0, $placeholder_height = 0  ) {
