@@ -1178,6 +1178,11 @@ footer {
     vertical-align: middle;
 }
 
+.single_add_to_cart_button {
+    width: 160px !important;
+    margin: 15px 0;
+}
+
 .added_to_cart:hover {
     color: #fff;
     background-color: #935386;
@@ -1205,6 +1210,35 @@ footer {
     margin-bottom: 10px;
 }
 
+#review_form textarea {
+    width: 100% !important;
+}
+
+a.star-1, a.star-2, a.star-3, a.star-4, a.star-5 {
+    width: 30px;
+    height: 29px;
+    background: url('img/star.png') no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+ul.tabs {
+    padding-left: 0;
+}
+
+.woocommerce-tabs #tab-reviews form#commentform p.form-submit input#submit {
+    background-color: #ffca59;
+    width: 160px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #ffca59;
+    border-radius: 0;
+}
+
+.woocommerce-tabs #tab-reviews form#commentform p.form-submit input#submit:hover {
+    color: #fff;
+    background-color: #FFAF00;
+}
 
 /** MISC **/
 .spacing .col-sm-2, .spacing .col-sm-10, .spacing .col-sm-12 {

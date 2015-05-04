@@ -24,7 +24,8 @@ global $post, $woocommerce, $product;
 			$image_link  	= wp_get_attachment_url( get_post_thumbnail_id() );
 			$image       	= get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
 				'title'	=> $image_title,
-				'alt'	=> $image_title
+				'alt'	=> $image_title,
+                'class' => 'img-responsive'
 				) );
 
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
