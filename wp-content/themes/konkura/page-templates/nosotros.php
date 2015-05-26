@@ -80,7 +80,7 @@
         <div class="container philosophy">
             <div class="row">
                 <div class="col-sm-12 margin-bottom">
-                    <h3>Filosofía:</h3>
+                    <h3>Filosofía</h3>
                 </div>
                     <div class="col-sm-12">
                            <div class="value value-first-row">
